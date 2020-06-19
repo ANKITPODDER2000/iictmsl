@@ -2,170 +2,73 @@
 	margin: 0;
 	padding: 0;
 }
-body{
+body,html{
 	max-width: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
+/*****************************************Header**********************************************/
 .logo{
 	height: 100vh;
 	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	overflow-x: hidden;
+	justify-content: space-around;
+	align-items: center;
 }
-.logo img{
-	height: 250px;
+.logo div{
+	position: relative;
+	width: 600px;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding: 0 25px;
+}
+.logo div img{
+	width: 550px;
 	-o-object-fit: contain;
 	   object-fit: contain;
 	margin-bottom: 50px;
 }
-/*.logo svg{
-	fill: white;
-}
-.logo svg path{
-	mix-blend-mode: difference;
-	stroke-dasharray: 600;
-	stroke-dashoffset: 600;
-}
-@keyframes anit{
-	to{
-		mix-blend-mode: difference;
-	}
-}
-.logo svg path:nth-child(1){
-	animation: 2s animate ease forwards,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(2){
-	animation: 2s animate ease forwards 0.15s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(3){
-	animation: 2s animate ease forwards 0.3s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(4){
-	animation: 2s animate ease forwards 0.45s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(5){
-	animation: 2s animate ease forwards 0.6s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(6){
-	animation: 2s animate ease forwards 0.75s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(7){
-	animation: 2s animate ease forwards 0.6s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(8){
-	animation: 2s animate ease forwards 1.2s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(9){
-	animation: 2s animate ease forwards 1.35s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(10){
-	animation: 2s animate ease forwards 1.5s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(11){
-	animation: 2s animate ease forwards 1.65s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(12){
-	animation: 2s animate ease forwards 1.8s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(13){
-	animation: 2s animate ease forwards 1.65s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(14){
-	animation: 2s animate ease forwards 2.1s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(15){
-	animation: 2s animate ease forwards 2.25s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(16){
-	animation: 2s animate ease forwards 2.4s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(17){
-	animation: 2s animate ease forwards 2.55s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(18){
-	animation: 2s animate ease forwards 2.7s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(19){
-	animation: 2s animate ease forwards 2.85s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(20){
-	animation: 2s animate ease forwards 3s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(21){
-	animation: 2s animate ease forwards 3.15s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(22){
-	animation: 2s animate ease forwards 3.3s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(23){
-	animation: 2s animate ease forwards 3.45s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(24){
-	animation: 2s animate ease forwards 3.6s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(25){
-	animation: 2s animate ease forwards 3.75s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(26){
-	animation: 2s animate ease forwards 3.6s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(27){
-	animation: 2s animate ease forwards 4.05s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(28){
-	animation: 2s animate ease forwards 4.2s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(29){
-	animation: 2s animate ease forwards 4.35s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(30){
-	animation: 2s animate ease forwards 4.5s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(31){
-	animation: 2s animate ease forwards 4.65s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(32){
-	animation: 2s animate ease forwards 4.8s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(33){
-	animation: 2s animate ease forwards 4.65s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(34){
-	animation: 2s animate ease forwards 5.1s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(35){
-	animation: 2s animate ease forwards 5.25s,fill 0.5s ease forwards 5.7s;
-}
-.logo svg path:nth-child(36){
-	animation: 2s animate ease forwards 5.4s,fill 0.5s ease forwards 5.7s;
-}
-@keyframes fill{
-	to{
-		fill: black;
-	}
-}
-@keyframes animate{
-	to{
-		stroke-dashoffset: 0;
-	}
-}
-*/
-#ban{
-	font-size: 40px;
+
+.logo div #ban{
+	font-size: 24px;
 	font-weight: bolder;
+	text-align: center;
+	height: 60px;
 }
+.logo svg{
+	overflow: auto;
+	position: relative;
+	width: 550px;
+}
+.logo svg #leaf{
+	position: relative;
+	transform-origin: bottom;
+	transform-box : fill-box;
+	animation: animate1 2s linear infinite alternate;
+	transform: rotateZ(0deg);
+}
+@keyframes animate1{
+	to{
+		transform: rotateZ(10deg);
+	}
+}
+.logo svg #leafG{
+	position: relative;
+	transform-origin: bottom;
+	transform-box : fill-box;
+	animation: animate2 3s linear infinite alternate;
+	transform: rotate(0deg);
+}
+@keyframes animate2{
+	to{
+		transform: rotate(5deg);
+	}
+}
+
 @media screen and (max-width : 1028px){
 	.logo h1{
 		-webkit-box-pack: center;
@@ -211,17 +114,10 @@ body{
 		line-height: 30px;
 	}
 }
-
-/*=======================Nav Bar Setup======================*/
-
-/*======================= End of Nav Bar Setup======================*/
 /*Control SVG Size*/
 @media screen and (max-width: 1091px){
 	.logo img{
 		width: 600px;
-	}
-	svg{
-		width: 650px;
 	}
 }
 @media screen and (max-width: 608px){
@@ -229,37 +125,18 @@ body{
 		width: 400px;
 	}
 }
-@media screen and (max-width: 700px){
-	svg{
-		width: 500px;
-	}
-}
-@media screen and (max-width: 520px){
-	svg{
-		width: 400px;
-	}
-}
 @media screen and (max-width: 420px){
 	.logo img{
 		width: 380px;
-	}
-	svg{
-		width: 350px;
 	}
 }
 @media screen and (max-width: 350px){
 	.logo img{
 		width: 300px;
 	}
-	svg{
-		width: 300px;
-	}
 }
 @media screen and (max-width: 310px){
 	.logo img{
-		width: 270px;
-	}
-	svg{
 		width: 270px;
 	}
 }
@@ -268,99 +145,170 @@ body{
 		height: 100px;
 		width: 100px;
 	}
-	svg{
-		width: 250px;
-	}
 }
 
-.about-us{
+/*=============================ABOUT IIC======================================*/
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
 	width: 100%;
-	min-height: 60vh;
-	overflow-x: hidden;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	min-width: 100%;
+	margin: 100px 0;
 }
-.about-us .con{
-	width: 90%;
-	height: 450px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+.container.team{
+	margin-top: 150px;
+	flex-direction: row-reverse;
+	text-align: right;
+}
+.container div{
 	position: relative;
+	width: 650px;
 }
-.about-us .con .tag{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	min-width: 300px;
-	height: 100%;
+.container div.image{
+	width: 450px;
 }
-.about-us .con .tag p{
-	font-size: 2.5em;
-	letter-spacing: 0.2em;
+.container div.image img{
+	width: 450px;
 }
-.about-us .con .docu{
-	outline: hidden;
-	padding: 0 30px;
-	width: 600px;
+.container div.content h1{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 6px;
+	margin-bottom: 15px;
 }
-.about-us .con .docu p{
-	line-height: 25px;
+.container div.content p{
 	font-size: 18px;
+	line-height: 24px;
 }
-/* ============================== Description =======================*/
-.show-mem{
-	display: none;
+a#knowmore1{
+	display: block;
+	position: relative;
+	width: 140px;
+	height: 50px;
+	background: transparent;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 20px;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	color: #004156;
 }
-.hide-mem{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+a#knowmore1 svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	fill: transparent;
 }
-@media screen and (max-width: 1010px){
-	.show-mem{
-		display: block;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-	}
-	.hide-mem{
-		display: none;
+a#knowmore1 svg rect{
+	position: relative;
+	stroke: #004156;
+	stroke-width: 4px;
+	width: 100%;
+	height: 100%;
+	stroke-dasharray: 600,600;
+	stroke-dashoffset: 0;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+a#knowmore1:hover svg rect{
+	stroke-dasharray: 160,400;
+	stroke-dashoffset: 380;
+	stroke: #004156;
+}
+a#knowmore1:hover{
+	color: #004156;
+	text-decoration: none;
+}
+a#knowmore2{
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #000;;
+	font-weight: bolder;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+	margin-top: 30px;
+	text-decoration: none;
+}
+a#knowmore2:hover{
+	color:white;
+	text-decoration: none;
+}
+a#knowmore2:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00c0ff;
+	z-index: -1;
+	-webkit-transform-origin: bottom right;
+	    -ms-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: -webkit-transform 1s;
+	transition: -webkit-transform 1s;
+	-o-transition: transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
+}
+a#knowmore2:after{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 2px solid black;
+	-webkit-transform-origin: top left;
+	    -ms-transform-origin: top left;
+	        transform-origin: top left;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: -webkit-transform 1s;
+	transition: -webkit-transform 1s;
+	-o-transition: transform 1s;
+	transition: transform 1s;
+	transition: transform 1s, -webkit-transform 1s;
+}
+a#knowmore2:hover:after{
+	-webkit-transform-origin: bottom right;
+	    -ms-transform-origin: bottom right;
+	        transform-origin: bottom right;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+}
+a#knowmore2:hover:before{
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transform-origin: top left;
+	    -ms-transform-origin: top left;
+	        transform-origin: top left;
+}
+
+@media screen and (max-width: 500px){
+	a#knowmore1,a#knowmore1{
+		zoom: 0.6;
+		font-size: 14px;
+		letter-spacing: 3px;
 	}
 }
 /*========================== Media Selector ========================*/
@@ -378,142 +326,116 @@ body{
 	}
 }
 
-/*========================== Personal Details ======================*/
-#perdet{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
-#personal-details{
+/*==========================Faculty Details ======================*/
+.faculty{
+	width: 100%;
 	position: relative;
-	overflow: hidden;
-	padding: 40px 20px;
-	display: -webkit-box;
-	display: -ms-flexbox;
+	min-height: 100vh;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	margin: 0 auto;
-	position: relative !important;
-
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-#personal-details img{
-	position: relative;
-	width: 150px;
-	height: 150px;
-	-o-object-fit: cover;
-	   object-fit: cover;
-	border-radius: 50%;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
+.faculty h1{
+	font-size: 34px;
 	margin-bottom: 40px;
+	text-align: center;
 }
-#personal-details img:hover{
-	-webkit-transform: scale(1.15);
-	    -ms-transform: scale(1.15);
-	        transform: scale(1.15);
+.faculty p{
+	text-align: center;
+	width: 700px;
+	display: block;
+	margin: 0 auto 40px;
+	font-size: 17px;
+	word-spacing: 3px;
 }
-#personal-details h2{
-	font-size: 23px;
-}
-#personal-details h2,div{
+.faculty .picbox{
 	position: relative;
+	width: 80%;
+	min-height: 400px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
-#personal-details::before{
-	content: '';
+.faculty .picbox div.box{
+	position: relative;
+	width: 250px;
+	height: 350px;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0 0 2px #000;
+	transition: 0.5s;
+}
+.faculty .picbox div.box:hover{
+	box-shadow: 0 0 8px #000;
+}
+.faculty .picbox div.box img{
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.faculty .picbox div.box .overlay{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
+	z-index: 5;
+	background: #4a082ac2;
+	color: #fff !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0;
 	transition: 0.5s;
-	-webkit-transform-origin: top;
-	    -ms-transform-origin: top;
-	        transform-origin: top;
-	-webkit-transform: scaleY(0);
-	    -ms-transform: scaleY(0);
-	        transform: scaleY(0);
-    background: -o-linear-gradient(45deg, #ff00cd, #051dfc);
-    background: linear-gradient(45deg, #ff00cd, #051dfc);
 }
-/*#personal-details:nth-child(1):before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
+.faculty .picbox div.box:hover .overlay{
+	opacity: 1;
+}
+.faculty .picbox div.box .overlay h2,
+.faculty .picbox div.box .overlay p{
+	position: relative;
 	width: 100%;
-	height: 100%;
+	text-align: center;
+}
+.faculty .picbox div.box .overlay h2{
+	margin-bottom: 15px;
+}
+/*================================ScrollTop================================*/
+.scrollTop{
+	cursor: pointer;
+	position: fixed;
+	bottom: 800px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	z-index: 999999;
+	background: #000;
+	visibility: hidden;
+	opacity: 0;
 	transition: 0.5s;
-	transform-origin: bottom;
-	transform: scaleY(0);
-	background: linear-gradient(45deg, red, #3b776500);
+	border-radius: 50px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 24px;
+	border-radius: 50px;
+	background: linear-gradient(145deg, #db4b91, #ff59ac);
+	box-shadow:  20px 20px 60px #cf4789, 
+	             -20px -20px 60px #ff5fb9;
 }
-#personal-details:nth-child(2):before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: 0.5s;
-	transform-origin: top;
-	transform: scaleY(0);
-	background: linear-gradient(45deg, #ff00cd, #051dfc);
+.scrollTop.active{
+	bottom: 40px;
+	visibility: visible;
+	opacity: 1;
 }
-#personal-details:nth-child(3):before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: 0.5s;
-	transform-origin: bottom;
-	transform: scaleY(0);
-    background: linear-gradient(45deg, #96dd8c, #fc0554);
-}
-#personal-details:nth-child(4):before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transition: 0.5s;
-	transform-origin: top;
-	transform: scaleY(0);
-    background: linear-gradient(45deg, #00ff1f, #1000ff);
-}*/
-#personal-details:hover:before{
-	-webkit-transform: scaleY(1);
-	    -ms-transform: scaleY(1);
-	        transform: scaleY(1);
-}
-#personal-details:hover h2,#personal-details:hover div p{
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
-	color: white;
-}
+
+
 /*======================= Particle Setup========================*/
 
 canvas {
@@ -535,139 +457,6 @@ canvas {
 	transition: 1s;
 }
 
-
-/*=============================Button Know More ========================*/
-a#abknowmorw{
-	display: block;
-	position: relative;
-	width: 140px;
-	height: 50px;
-	background: transparent;
-	line-height: 50px;
-	font-size: 14px;
-	text-align: center;
-	margin-top: 40px;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
-}
-a#abknowmorw svg{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	fill: transparent;
-}
-a#abknowmorw svg rect{
-	position: relative;
-	stroke: #ff00a2;
-	stroke-width: 4px;
-	width: 100%;
-	height: 100%;
-	stroke-dasharray: 600,600;
-	stroke-dashoffset: 0;
-	-webkit-transition: 1s;
-	-o-transition: 1s;
-	transition: 1s;
-}
-a#abknowmorw:hover svg rect{
-	stroke-dasharray: 160,400;
-	stroke-dashoffset: 380;
-	stroke: #fc0554
-}
-a#abknowmorw:hover{
-	color: black;
-	text-decoration: none;
-}
-a#memknow{
-	position: relative;
-	display: inline-block;
-	padding: 10px 20px;
-	font-size: 14px;
-	color: #000;;
-	font-weight: bolder;
-	-webkit-transition: 0.8s;
-	-o-transition: 0.8s;
-	transition: 0.8s;
-	margin-top: 30px;
-}
-a#memknow:hover{
-	color:white;
-	text-decoration: none;
-}
-a#memknow:before{
-	content: '';
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #00c0ff;
-	z-index: -1;
-	-webkit-transform-origin: bottom right;
-	    -ms-transform-origin: bottom right;
-	        transform-origin: bottom right;
-	-webkit-transform: scale(0);
-	    -ms-transform: scale(0);
-	        transform: scale(0);
-	-webkit-transition: -webkit-transform 1s;
-	transition: -webkit-transform 1s;
-	-o-transition: transform 1s;
-	transition: transform 1s;
-	transition: transform 1s, -webkit-transform 1s;
-}
-a#memknow:after{
-	content: '';
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: transparent;
-	border: 2px solid black;
-	-webkit-transform-origin: top left;
-	    -ms-transform-origin: top left;
-	        transform-origin: top left;
-	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
-	-webkit-transition: -webkit-transform 1s;
-	transition: -webkit-transform 1s;
-	-o-transition: transform 1s;
-	transition: transform 1s;
-	transition: transform 1s, -webkit-transform 1s;
-}
-a#memknow:hover:after{
-	-webkit-transform-origin: bottom right;
-	    -ms-transform-origin: bottom right;
-	        transform-origin: bottom right;
-	-webkit-transform: scale(0);
-	    -ms-transform: scale(0);
-	        transform: scale(0);
-}
-a#memknow:hover:before{
-	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
-	-webkit-transform-origin: top left;
-	    -ms-transform-origin: top left;
-	        transform-origin: top left;
-}
-
-@media screen and (max-width: 500px){
-	a#abknowmorw,a#memknow{
-		zoom: 0.6;
-		font-size: 14px;
-		letter-spacing: 3px;
-	}
-}
-
-/*========================For 2 description ================================*/
-#description{
-	font-size: 16px;
-	line-height: 30px;
-}
 /*Loading Animation*/
 .load{
   display: -webkit-box;
