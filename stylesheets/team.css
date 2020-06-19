@@ -1,0 +1,316 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+
+/*Style H1*/
+h1{
+	margin-top: 100px;
+	text-align: center;
+	line-height: 100px;
+	text-decoration: underline;
+	letter-spacing: 4px;
+}
+
+.mainBx{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.mainBx .contain{
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	width: 1100px;
+}
+.mainBx .contain .box{
+	position: relative;
+	width: 250px;
+	height: 350px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	z-index: 9999;
+	background: black;
+}
+.mainBx .contain .box #mainBx{
+	position: relative;
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+}
+.mainBx .contain .box:hover #mainBx{
+	height: 100%;
+}
+.mainBx .contain .box #desig{
+	position: relative;
+	height: 20%;
+	max-width: 100%;
+	background: #000;
+	text-align: center;
+	padding-top: 10px;
+}
+.mainBx .contain .box #desig h3{
+	color: #fff;
+}.mainBx .contain .box #desig P{
+	margin-top: 5px;
+	color: white;
+}
+.mainBx .contain .box .imgBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: 1.5s ease-in-out;
+	-o-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+}
+.mainBx .contain .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.mainBx .contain .box:hover .imgBx{
+	-webkit-transition-delay: 0.6s;
+	     -o-transition-delay: 0.6s;
+	        transition-delay: 0.6s;
+	-webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	        transform: translateY(-100%);
+}
+.mainBx .contain .box .layer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: 1.5s ease-in-out;
+	-o-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+}
+.mainBx .contain .box .layer.layer1{
+	background: #0096ff;
+	-webkit-transform: translateY(100%);
+	    -ms-transform: translateY(100%);
+	        transform: translateY(100%);
+}
+.mainBx .contain .box:hover .layer.layer1{
+	-webkit-transition-delay: 0.6s;
+	     -o-transition-delay: 0.6s;
+	        transition-delay: 0.6s;
+	-webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	        transform: translateY(-100%);
+}
+.mainBx .contain .box .layer.layer2{
+	background: #90ff00;
+	-webkit-transform: translateY(200%);
+	    -ms-transform: translateY(200%);
+	        transform: translateY(200%);
+}
+.mainBx .contain .box:hover .layer.layer2{
+	-webkit-transition-delay: 0.6s;
+	     -o-transition-delay: 0.6s;
+	        transition-delay: 0.6s;
+	-webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	        transform: translateY(-100%);
+}
+.mainBx .contain .box .contentBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width:100%;
+	-webkit-transition: 1.5s ease-in-out;
+	-o-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	background: #111;
+	color: #fff;
+	overflow: hidden;
+	-webkit-transform: translateY(300%);
+	    -ms-transform: translateY(300%);
+	        transform: translateY(300%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	overflow: hidden;
+}
+.mainBx .contain .box:hover .contentBx{
+	-webkit-transition-delay: 0.6s;
+	     -o-transition-delay: 0.6s;
+	        transition-delay: 0.6s;
+	-webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+.mainBx .contain .box .contentBx div#content{
+	height: 100%;
+	max-width: 250px;
+	overflow-x: hidden !important;
+	padding: 40px 20px; 
+	-webkit-transition: 2s ease-in-out; 
+	-o-transition: 2s ease-in-out; 
+	transition: 2s ease-in-out;
+	-webkit-transform: translateY(400%);
+	    -ms-transform: translateY(400%);
+	        transform: translateY(400%);
+	overflow: hidden;
+}
+.mainBx .contain .box .contentBx div#content h2{
+	letter-spacing: 3px;
+	margin-bottom: 30px;
+}
+.mainBx .contain .box .contentBx div#content p{
+	line-height: 25px;
+
+}
+.mainBx .contain .box:hover .contentBx div#content{
+	-webkit-transition-delay: 0.6s;
+	     -o-transition-delay: 0.6s;
+	        transition-delay: 0.6s;
+	-webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	        transform: translateY(0%);
+}
+.mainBx .contain .box .contentBx div#content .icon{
+	margin-top: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border: red;
+}
+.mainBx .contain .box .contentBx div .icon i{
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	background: white;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	background: white;
+	color: black;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+.mainBx .contain .box .contentBx div .icon i:hover{
+	background: transparent;
+	color: white;
+}
+
+/*======================= Particle Setup========================*/
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0.6;
+  z-index: -1;
+}
+/*Style For footer for Transition*/
+.footerIcon:hover{
+	cursor: pointer;
+	-webkit-transform: scale(1.3);
+	    -ms-transform: scale(1.3);
+	        transform: scale(1.3);
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+
+/*======================= Particle Setup========================*/
+
+canvas {
+  position: fixed;
+}
+/*Loader Animation*/
+.load{
+    z-index: 999999999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #222;
+}
+
+
+
+
+/*===================Load==============*/
+/*Loading Animation*/
+.load{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1d1f20;
+  z-index: 999999999;
+}
+#loading {
+        -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+        from {
+                -webkit-transform: rotate(0deg);
+        }
+        to {
+                -webkit-transform: rotate(359deg);
+        }
+}

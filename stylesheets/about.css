@@ -1,0 +1,460 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+
+/*=======================-===============Header==============================================*/
+header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	color: black;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+header img{
+	-o-object-fit: cover;
+	   object-fit: cover;
+	width: 200px;
+	margin: 0 20px;
+}
+@media screen and (max-width : 600px){
+	header img{
+		width: 150px;
+	}
+}
+header div{
+	position: relative;
+	max-width: 800px;
+	font-size: 24px;
+	margin: 0 20px;
+}
+header div span{
+	position: absolute;
+	font-size: 18px;
+	display: inline-block;
+}
+header div span:nth-child(1){
+	top: -20px;
+	left: 0px;
+}
+header div span:nth-child(2){
+	position: absolute;
+	margin: 10px;
+}
+@media screen and (max-width: 900px){
+	header div{
+		max-width: 600px;
+		font-size: 21px;
+	}
+}
+@media screen and (max-width: 650px){
+	header div{
+		max-width: 400px;
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 430px){
+	header div span i{
+		font-size: 10px;
+	}
+	header div{
+		max-width: 300px;
+		font-size: 14px;
+	}
+}
+/*===================================Style About Us========================*/
+.about-us{
+	max-width: 100%;
+	padding: 0 10%;
+	min-height: 60vh;
+	color: black;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.about-us h2{
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+.about-us p{
+	font-size: 22px;
+	line-height: 30px;
+}
+@media screen and (max-width: 575px){
+	.about-us h2{
+		font-size: 34px;
+		margin-bottom: 40px;
+	}
+	.about-us p{
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+/*===================================End of Style About Us========================*/
+/*===================================Style for Members========================*/
+.members{
+	max-width: 100%;
+	padding: 10%;
+	overflow: hidden;
+	min-height: 100vh;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-top: 100px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.members h1{
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	margin-bottom: 50px;
+	letter-spacing: 5px;
+	padding: 20px;
+	border-bottom: 2px solid white;
+}
+.members .con{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+/*@media screen and (max-width: 1515px){
+	.members .con{
+		justify-content: center;
+	}
+}*/
+.members .con .person{
+	z-index: 9999;
+	overflow: hidden;
+	width: 280px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 400px;
+	position: relative;
+	background: rgba(255,255,255,1);
+	margin-bottom: 50px;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+	-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+	        box-shadow: 0px 5px 5px rgba(0,0,0,0.4);
+}
+.members .con .person img{
+	display: block;
+	position: relative;
+	margin: 15px auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 1px solid black;
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+.members .con .person .content{
+	padding: 20px;
+}
+.members .con .person .content h3{
+	position: relative;
+	text-align: center;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+.members .con .person .content p{
+	font-size: 14px;
+	line-height: 20px;
+	height: 100px;
+}
+.members .con .person .social-media{
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: #df4661;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	-webkit-transform-origin: top left;
+	    -ms-transform-origin: top left;
+	        transform-origin: top left;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+}
+.members .con .person .social-media i{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	color: black;
+	text-align: center;
+	line-height: 70px;
+	background: #fff;
+	font-size: 22px;
+	font-weight: bolder;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+    opacity: 0;
+}
+.members .con .person:hover .social-media{
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transform-origin: top left;
+	    -ms-transform-origin: top left;
+	        transform-origin: top left;
+}
+.members .con .person:hover .social-media i{
+    opacity: 1;
+}
+.members .con .person .social-media i:hover{
+	background: none;
+	color: white;
+}
+
+/*======================= Particle Setup========================*/
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/*Style For footer for Transition*/
+.footerIcon i:hover{
+	cursor: pointer;
+	-webkit-transform: scale(1.3);
+	    -ms-transform: scale(1.3);
+	        transform: scale(1.3);
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+/*Loader*/
+
+.load{
+	z-index: 99999999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+    background: #000;
+}
+.loader
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+        -ms-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+    width: 100px;
+    height: 100px;
+    -webkit-animation: animate 1s linear infinite;
+            animation: animate 1s linear infinite;
+}
+.loader span
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #f00;
+    -webkit-animation: rotate 1s linear infinite;
+            animation: rotate 1s linear infinite;
+}
+.loader span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    background: #f79f1f;
+}
+.loader span:nth-child(2)
+{
+    top: 0;
+    right: 0;
+    background: #12cbc4;
+}
+.loader span:nth-child(3)
+{
+    bottom: 0;
+    left: 0;
+    background: #ed4c67;
+}
+.loader span:nth-child(4)
+{
+    bottom: 0;
+    right: 0;
+    background: #a3cb38;
+}
+@-webkit-keyframes animate
+{
+    0%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    10%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    50%
+    {
+        width: 150px;
+        height: 150px;
+    }
+    90%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    100%
+    {
+        width: 100px;
+        height: 100px;
+    }
+}
+@keyframes animate
+{
+    0%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    10%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    50%
+    {
+        width: 150px;
+        height: 150px;
+    }
+    90%
+    {
+        width: 100px;
+        height: 100px;
+    }
+    100%
+    {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@-webkit-keyframes rotate
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    10%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    60%
+    {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    90%
+    {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    10%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    60%
+    {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    90%
+    {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+}

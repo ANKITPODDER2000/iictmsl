@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/*===========================Style of Header========================
+header{
+    z-index: -9999999999999;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+header div p{
+    line-height: 40px;
+}
+header div p span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+header div p span.conetnt{
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 100px;
+    line-height: 50px;
+}
+@media screen and (max-width: 1302px){
+    header div p span.conetnt{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 1030px){
+    header div p span.conetnt{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 843px){
+    header div p span.conetnt{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 550px){
+    header div p span.conetnt{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 310px){
+    header div p span.conetnt{
+        font-size: 24px;
+    }
+}
+header div p span.conetnt:before{
+    content: '';
+    animation: animate 7s linear infinite ;
+}
+@keyframes animate{
+    0%{
+        content: 'Think Big';
+    }
+    20%{
+        content: 'Do Your Work Now';
+    }
+    40%{
+        content: 'Never Give Up';
+    }
+    60%{
+        content: 'Try Again';
+    }
+    80%{
+        content: 'Restart Again';
+    }
+    100%{
+        content: 'Do Again';
+    }
+}
+@media screen and (max-width: 900px){
+    header div{
+        max-width: 600px;
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 650px){
+    header div{
+        max-width: 500px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 450px){
+    header img{
+        width: 150px;
+        height: 150px;
+        margin-top: 40px;
+    }
+    header div{
+        max-width: 300px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 450px){
+    .mainLine{
+        font-size: 12px;
+    }
+}
+===========================End of Style of Header========================*/
+/*===========================Start of Style of Activity========================*/
+.activity{
+    position: relative;
+    margin-top: 70px;
+    max-width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.activity .content{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.activity .content .box{
+    position: relative;
+    background: #fff;
+    max-width: 300px;
+    height: 350px;
+    padding: 50px 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+    border: 1px solid black;
+}
+/*Code not End */
+.stycky .box .ntent .box h3{
+    z-index: 99999;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.activity .content .box h3{
+    position: relative;
+    line-height: 20px;
+    letter-spacing: 2px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.activity .content .box:hover h3,.activity .content .box:hover p{
+    color: white;
+}
+.activity .content .box p{
+    z-index: 99999;
+    position: relative;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.activity .content .box h1{
+    display: block;
+    position: relative;
+    margin: 0 auto 20px;
+    color : #fff;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%; 
+    -webkit-transition: 1s; 
+    -o-transition: 1s; 
+    transition: 1s;
+}
+
+.activity .content .box:nth-child(4n+1) h1{
+    background: #ff0068;
+}
+.activity .content .box:nth-child(4n+1):hover h1{
+    background: white;
+    color: black;
+    -webkit-box-shadow: 0 0 0 400px #ff0068;
+            box-shadow: 0 0 0 400px #ff0068;
+}
+.activity .content .box:nth-child(4n+2) h1{
+    background: #b300b3;
+}
+.activity .content .box:nth-child(4n+2):hover h1{
+    background: white;
+    color: black;
+    -webkit-box-shadow: 0 0 0 400px #b300b3;
+            box-shadow: 0 0 0 400px #b300b3;
+}
+.activity .content .box:nth-child(4n+3) h1{
+    background: #00e600;
+}
+.activity .content .box:nth-child(4n+3):hover h1{
+    background: white;
+    color: black;
+    -webkit-box-shadow: 0 0 0 400px #00e600;
+            box-shadow: 0 0 0 400px #00e600;
+}
+.activity .content .box:nth-child(4n+4) h1{
+    background: #3333ff;
+}
+.activity .content .box:nth-child(4n+4):hover h1{
+    background: white;
+    color: black;
+    -webkit-box-shadow: 0 0 0 400px #3333ff;
+            box-shadow: 0 0 0 400px #3333ff;
+}
+
+/*Style For footer for Transition*/
+.footerIcon:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+/*======================= Particle Setup========================*/
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0.6;
+  z-index: -99999;
+}
+/*Loader Animation*/
+.load{
+    z-index: 999999999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #231f20;
+}
+/*Internship btn*/
+#know-more{
+    position: relative;
+    display: block;
+    width : 100px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px auto 0;
+    -webkit-box-shadow: 0px 2px  5px rgba(0,0,0,0.3);
+            box-shadow: 0px 2px  5px rgba(0,0,0,0.3);
+    text-decoration: none;
+    background: #fff;
+    color: black;
+}
+
+@media screen and (max-width:340px){
+    .activity .content .box{
+        width: 280px;
+    }
+}

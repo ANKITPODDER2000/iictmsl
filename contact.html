@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/contact.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" />
+</head>
+
+<body>
+    <!--Loader-->
+    <div class="load">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--============================Navbar SetUp Html==========================-->
+    <div class="responsive-bar">
+        <div class="icon">
+            <a href="index.html"><img src="./image/IIC.png"></a>
+        </div>
+        <div class="menu">
+            <h4>MENU</h4>
+        </div>
+    </div>
+    <nav>
+        <div class="icon">
+            <a href="index.html"><img src="./image/IIC.png"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
+            <li><a href="activity.html">ACTIVITY</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="#" class="active">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!--============================End of Navbar SetUp Html==========================-->
+        <!--============================Start Of Contact(Phone No. And Address)==========================-->
+        <h1 class="con animated fadeInLeft">Contact Us</h1>
+        <span class="underlineCon animated fadeInRight"></span>
+        <div class="contact">
+            <div class="phone">
+                <div>
+                    <i class="fas fa-address-card" style="margin-bottom: 40px;font-size: 30px"></i>
+                    <h3 class="animated fadeInRight">Kaushik Ghosh</h3>
+                    <h4>Start-up Head </h4>
+                    <h4 class="animated fadeInLeft">Phone : 8809441240</h4>
+                    <h4>gmail : iic.tmsl@gmail.com</h4>
+                </div>
+                <div>
+                    <i class="fas fa-address-card" style="margin-bottom: 40px;font-size: 30px"></i>
+                    <h3 class="animated fadeInRight">Ritwik Gupta </h3>
+                    <h4>Innovation Head</h4>
+                    <h4 class="animated fadeInLeft">Phone : 8617808574</h4>
+                    <h4>gmail : iic.tmsl@gmail.com</h4>
+                </div>
+                <div>
+                    <i class="fas fa-address-card" style="margin-bottom: 40px;font-size: 30px"></i>
+                    <h3 id="cha" class="animated fadeInRight">Sumit Kumar Mahto</h3>
+                    <h4>Social Media Head</h4>
+                    <h4 class="animated fadeInLeft">Phone : 9572683975</h4>
+                    <h4>gmail : iic.tmsl@gmail.com</h4>
+                </div>
+            </div>
+        </div>
+        <!--=========================End Of Contact(Phone No. And Address)====================-->
+
+        <h1 style="margin: 40px 0;text-align: center;letter-spacing: 3px">LOCATION</h1>
+
+        <!--============================Map & Address=====================================-->
+        <div class="map-add">
+            <div class="innerBx" style="margin-top: 30px">
+                <div class="map" data-aos="fade-right">
+                    <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.076443292361!2d88.42483321479212!3d22.576244085180907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02751a9d9c9e85%3A0x7fe665c781b10383!2sTechno%20Main%20Salt%20Lake!5e0!3m2!1sen!2sin!4v1571215952469!5m2!1sen!2sin" frameborder="0" style="" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div class="add" data-aos="fade-left" style="margin-top: 60px">
+                <h3>ADDRESS</h3>
+                <br><br>
+                <h4>
+                    TECHNO INDIA : EM-4/1, Sector-V, Salt Lake, Kolkata-700091,Wst Bengal<br><br>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer
+        style="width: 100%;height: 50px;background: black;color: white;line-height: 50px;text-align: center;margin-top: 0px">
+        <p style="margin: 0">Contact Us - 
+            <a target = "_blank" href="https://www.facebook.com/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-facebook-square"></i></a>
+            <a target = "_blank" href="https://twitter.com/iictmsl"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-twitter"></i></a>
+            <a target = "_blank" href="https://www.instagram.com/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-instagram"></i></a>
+            <a target = "_blank" href="https://www.linkedin.com/company/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-linkedin-in"></i></a>
+        </p>
+    </footer>
+    <!-- ===========================Add Js Plugins ===================================-->
+    <script src="./jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function () {
+            $('.load').fadeOut(1500);
+        });
+
+        AOS.init({
+            duration: 2000,
+        });
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() && window.innerWidth >= 800) {
+                $('nav').addClass('a animated slideInDown');
+            }
+            else {
+                $('nav').removeClass('a animated slideInDown');
+            }
+        });
+        $(document).ready(() => {
+            $('.menu h4').click(() => {
+                $("nav ul").toggleClass('active');
+            })
+        })
+        console.clear();
+    </script>
+</body>
+
+</html>
