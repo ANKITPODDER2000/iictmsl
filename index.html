@@ -32,7 +32,7 @@
           <div class="square"></div>
       </div>
     </div>
-      <div class="responsive-bar">
+      <!--<div class="responsive-bar">
           <div class="icon">
               <a href="index.html">
                 <img src="./image/IIC.png">
@@ -41,7 +41,7 @@
           <div class="menu">
               <h4>MENU</h4>
           </div>
-      </div>
+      </div>-->
       <!--============================Navbar SetUp Html==========================-->
       <nav>
           <div class="icon">
@@ -50,13 +50,14 @@
               </a>
           </div>
           <ul>
-              <li><a href="index.html" class="active">HOME</a></li>
-              <li><a href="about.html">ABOUT US</a></li>
-              <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
-              <li><a href="activity.html">ACTIVITY</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li><a href="team.html">TEAM</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
+              <li onmouseover="mouseover(this)" onmouseout="initial()"  class="active"><a href="index.html">HOME</a></li>
+              <li onmouseover="mouseover(this)" onmouseout="initial()"><a href="about.html">ABOUT US</a></li>
+              <li onmouseover="mouseover(this)" onmouseout="initial()"><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
+              <li onmouseover="mouseover(this)" onmouseout="initial()"><a href="activity.html">ACTIVITY</a></li>
+              <li onmouseover="mouseover(this)" onmouseout="initial()"><a href="gallery.html">GALLERY</a></li>
+              <li onmouseover="mouseover(this)" onmouseout="initial()"><a href="team.html">TEAM</a></li>
+              <li onmouseover="mouseover(this)" onmouseout="initial()"><a href="contact.html">CONTACT</a></li>
+              <div class="marker"></div>
           </ul>
       </nav>
         <!--============================End of Navbar SetUp Html==========================-->
@@ -205,7 +206,26 @@
                 </a>
           </div>
         </div>
-
+        <section class="counter">
+          <div class="count">
+            <h1 class="num">500</h1>
+            <h3>Startups</h3>
+          </div>
+          <div class="count">
+            <i class="fas fa-user-friends"></i>
+            <h1 class="num">5000</h1>
+            <h3>Participants</h3>
+          </div>
+          <div class="count">
+            <i class="fas fa-calendar-week"></i>
+            <h1 class="num">10</h1>
+            <h3>Events</h3>
+          </div>
+          <div class="count">
+            <h1 class="num">40</h1>
+            <h3>Speakers</h3>
+          </div>
+        </section>
         <div class="faculty">
           <h1>Meet Our Faculty</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -265,6 +285,10 @@
     <script src="./jquery.js"></script>
     <script src="./particles.js"></script>
     <script src="typed.js"></script>
+
+    <script src="counterup.js"></script>
+    <script src="waypoints.js"></script>
+
     <script type="text/javascript">
       particlesJS('particles-js', {
           "particles": {
@@ -378,10 +402,34 @@
         }
 
         );
+        //marker && nav
+        let marker = document.querySelector(".marker");
+        const active = document.querySelector("#particles-js > nav > ul > li.active");
+        const mouseover = (e)=>{
+          marker.style.left = e.offsetLeft + "px";
+          marker.style.width = e.offsetWidth + "px";
+        }
+        const initial = ()=>{
+          marker.style.left = active.offsetLeft + "px";
+          marker.style.width = active.offsetWidth + "px";
+        }
+        initial();
+        window.addEventListener("scroll",function(){
+          if(window.scrollY > 40){
+            document.querySelector("nav").classList.add("active");
+          }
+          else{
+            document.querySelector("nav").classList.remove("active");
+          }
+        })
+        if(window.scrollY > 40){
+            document.querySelector("nav").classList.add("active");
+          }
 
-
+        //counter
+        $('.num').counterUp();
         //ScrollTop
-        window,addEventListener("scroll",function(){
+        window.addEventListener("scroll",function(){
           let scroll = document.querySelector(".scrollTop");
           scroll.classList.toggle("active",window.scrollY > 500);
         })
@@ -397,20 +445,6 @@
         AOS.init({
             duration: 1500,
         });
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() && window.innerWidth >= 1060) {
-                $('nav').addClass('a animated slideInDown');
-                //console.log("COme");
-            }
-            else {
-                $('nav').removeClass('a animated slideInDown');
-            }
-        });
-        $(document).ready(() => {
-            $('.menu h4').click(() => {
-                $("nav ul").toggleClass('active');
-            })
-        })
         var typed = new Typed("#typed", {
             strings: [
               "W^200E^100L^100C^100O^200M^200E^100 ^100T^100O^100 ^100T^200H^100E^100 ^100O^200F^100F^100I^100C^100I^100A^200L^100 ^100W^100E^200B^100S^100I^100T^100E^100 ^200O^100F^100 ^100I^200I^100C^100 T^100M^100S^100L^600.^1000 ",

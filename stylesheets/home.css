@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,500;1,600&family=Poppins&family=Russo+One&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -6,14 +7,16 @@ body,html{
 	max-width: 100%;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
 /*****************************************Header**********************************************/
 .logo{
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .logo div{
 	position: relative;
@@ -68,82 +71,30 @@ body,html{
 		transform: rotate(5deg);
 	}
 }
-
-@media screen and (max-width : 1028px){
-	.logo h1{
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+@media screen and (max-width: 1135px){
+	.logo{
+		position: relative;
+		padding-top: 100px;
+		display: flex;
+		min-height: 100vh;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
-	#ban{
-		font-size: 24px;
-		line-height: 30px;
+	.logo .box1{
+		width: 80%;
+		position: relative;
+		min-height: 100px;
+		padding: 30px 0;
 	}
-}
-
-@media screen and (max-width : 650px){
-	.logo h1{
-		width: 250px;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+	.logo .box1 img{
+		position: relative;
+		width: 80%;
+		object-fit: contain;
 	}
-	#ban{
-		font-size: 24px;
-		line-height: 30px;
-	}
-}
-@media screen and (max-width : 500px){
-	.logo h1{
-		height: 250px;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-	}
-	#ban{
-		font-size: 24px;
-		line-height: 30px;
-	}
-}
-/*Control SVG Size*/
-@media screen and (max-width: 1091px){
-	.logo img{
-		width: 600px;
-	}
-}
-@media screen and (max-width: 608px){
-	.logo img{
-		width: 400px;
-	}
-}
-@media screen and (max-width: 420px){
-	.logo img{
-		width: 380px;
-	}
-}
-@media screen and (max-width: 350px){
-	.logo img{
-		width: 300px;
-	}
-}
-@media screen and (max-width: 310px){
-	.logo img{
-		width: 270px;
-	}
-}
-@media screen and (max-width: 305px){
-	.logo img{
-		height: 100px;
-		width: 100px;
+	#particles-js > div.logo > svg{
+		height: 400px;
+		margin-top: 50px;
 	}
 }
 
@@ -325,7 +276,52 @@ a#knowmore2:hover:before{
 		font-weight: bold;
 	}
 }
-
+/*==========================counter=============================*/
+.counter{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	margin: 100px 0;
+	background: url(https://www.bernardmarr.com/img/whoswho.jpeg),linear-gradient(to right, #e53935, #e35d5b);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.counter .count{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+}
+.counter .count h1{
+	font-size: 40px;
+	line-height: 40px;
+	margin-bottom: 15px;
+	font-family: 'Russo One', sans-serif;
+	letter-spacing: 5px;
+}
+.counter .count h3{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 28px;
+	font-family: 'Poppins', sans-serif;
+}
+.counter .count i{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
 /*==========================Faculty Details ======================*/
 .faculty{
 	width: 100%;
