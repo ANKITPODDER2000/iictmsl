@@ -216,7 +216,7 @@ $("#day-night").click(()=>{
                 }
             },
             "opacity": {
-                "value": 0.2,
+                "value": 0.8,
                 "random": true,
                 "anim": {
                     "enable": true,
@@ -231,7 +231,7 @@ $("#day-night").click(()=>{
                 "anim": {
                     "enable": false,
                     "speed": 80,
-                    "size_min": 0.1,
+                    "size_min": 0.4,
                     "sync": false
                 }
             },
@@ -239,12 +239,12 @@ $("#day-night").click(()=>{
                 "enable": true,
                 "distance": 200,
                 "color": color,
-                "opacity": 0.25,
+                "opacity": 0.35,
                 "width": 2
             },
             "move": {
                 "enable": true,
-                "speed": 12,
+                "speed": 8,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -281,7 +281,7 @@ $("#day-night").click(()=>{
                     "distance": 800,
                     "size": 80,
                     "duration": 2,
-                    "opacity": 0.8,
+                    "opacity": 1,
                     "speed": 3
                 },
                 "repulse": {
