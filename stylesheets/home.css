@@ -13,6 +13,7 @@ body,html{
 	scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
     background: var(--background);
+    transition: 0.5s;
 }
 /*****************************************Header**********************************************/
 .logo{
@@ -290,7 +291,7 @@ a#knowmore2:hover:before{
 	width: 100%;
 	height: 400px;
 	margin: 100px 0;
-	background: url(https://www.bernardmarr.com/img/whoswho.jpeg),linear-gradient(to right, #e53935, #e35d5b);
+	background: url("../image/brain.png"),linear-gradient(to right, #e53935, #e35d5b);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;

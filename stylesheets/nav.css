@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: var(--background);
     z-index: 9999999;
     transition: 0.75s;
     padding: 0 80px;
@@ -44,6 +44,8 @@
 .fixedbar div:nth-child(2) i{
     font-size: 26px;
     margin-right: 20px;
+    color: var(--color);
+    transition: 0.5s;
     cursor: pointer;
 }
 .fixedbar div:nth-child(2) div{
@@ -62,7 +64,7 @@
     width: 100%;
     position: relative;
     height: 2px !important;
-    background: #000;
+    background: var(--color);
     margin: 3px 0;
     transition: 0.8s;
 }
@@ -91,6 +93,9 @@
 .fixedbar.active{
     height: 55px;
     box-shadow: 0 5px 20px #0008;
+}
+.fixedbar.active.night{
+    box-shadow: 0 5px 20px #fff4;
 }
 .fixedbar.active div img{
     height: 40px;
