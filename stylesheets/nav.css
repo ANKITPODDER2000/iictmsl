@@ -1,3 +1,4 @@
+  
 *{
     padding: 0;
     margin: 0;
@@ -100,6 +101,23 @@
 .fixedbar.active div img{
     height: 40px;
 }
+/*Responsive*/
+@media screen and (max-width: 600px){
+    .fixedbar{
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 430px){
+    .fixedbar div:nth-child(2) a{
+        display: none;
+    }
+    .fixedbar div:nth-child(2) div{
+        margin-left: 0;
+    }
+    .fixedbar.togglebar{
+        transform: translate(-200px);
+    }
+}
 /*==================================All about fixedbar==================================*/
 nav{
     position: fixed;
@@ -159,6 +177,18 @@ nav ul li a:hover::before{
 #main.togglebar{
     transform: translateX(-300px);
 }
+@media screen and (max-width: 430px){
+    nav{
+        width: 200px;
+        transform: translateX(200px);
+    }
+    nav.togglebar{
+        transform: translateX(0);
+    }
+    #main.togglebar{
+        transform: translateX(-200px);
+    }
+}
 /*==============================Scroll Top=========================*/
 .scrollTop{
     cursor: pointer;
@@ -191,4 +221,24 @@ nav ul li a:hover::before{
 }
 .scrollTop.active.togglebar{
     transform: translate(-300px);
+}
+@media screen and (max-width: 580px){
+    .scrollTop{
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .scrollTop.active{
+        bottom: 30px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 430px){
+    .scrollTop.togglebar,
+    .scrollTop.active.togglebar{
+        transform: translate(-200px);
+    }
 }
