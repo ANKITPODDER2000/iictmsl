@@ -20,141 +20,157 @@
             <span></span>
         </div>
     </div>
-    <!--============================Navbar SetUp Html==========================-->
-    <div class="responsive-bar">
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
+    <!--NavbarSetUp-->
+    <nav>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="active"><a href="about.html">ABOUT US</a></li>
+                <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
+                <li><a href="activity.html">ACTIVITY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <div class="marker"></div>
+            </ul>
         </div>
-        <div class="menu">
-            <h4>MENU</h4>
+    </nav>
+    <!--FixedBar For Top of the Page-->
+    <div class="fixedbar">
+        <div>
+            <a href="#">
+                <img src="./image/IIC.png">
+            </a>
+        </div>
+        <div>
+            <i class="far fa-moon" id="day-night"></i>
+            <a class="btn">Contact Us</a>
+            <div class="handburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
-    <nav>
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
-        </div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#" class="active">ABOUT US</a></li>
-            <li><a  href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
-            <li><a href="activity.html">ACTIVITY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-    <!--============================End of Navbar SetUp Html==========================-->
-    <header>
-        <img src="./image/IIC.png">
-        <div>
+    <!--Scroll Top Option-->
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+	<div id="main">
+		<header>
+		<img src="./svg/think_about_header.svg"  data-aos="fade-right">
+        <div data-aos="fade-left">
             <span><i class="fas fa-quote-left"></i></span>&nbsp&nbsp&nbspWe want to create a vibrant local innovation ecosystem. IIC TMSL is the Start-up supporting Mechanism of Techno Main Salt Lake. We want to establish Function Ecosystem for Scouting Ideas and Pre-incubation of Ideas and want to develop better Cognitive Ability for TMSL Students.<span><i class="fas fa-quote-right"></i></span>
         </div>
     </header>
     <br><br>
     <div class="about-us">
-        <h2 style="text-align: center;width: 100%" data-aos="fade-up">What Is IIC</h2>
-        <p data-aos="fade-up">
-            Ministry of Human Resource Development (MHRD), Govt. of India has established <q>MHRD</q>s Innovation Cell (MIC)&apos; to systematically foster the culture of Innovation amongst all Higher Education Institutions (HEIs). The primary mandate of MIC is to encourage, inspire and nurture young students by supporting them to work with new ideas and transform them into prototypes while they are informative years. MIC has envisioned encouraging creation of <q>Institution</q>s Innovation Council (IICs)&apos; across selected HEIs.<br><br>
-        </p>
+    	<img src="./svg/idea.svg" data-aos="fade-right">
+        <div class="content" data-aos="fade-left" onmousemove="hov(event,this,'#main > div:nth-child(4) > div > div');" onmouseout="rmhover('#main > div:nth-child(4) > div > div')">
+        	<div class="marker"></div>
+        	<h2>What Is IIC</h2>
+	        <p>
+	            Ministry of Human Resource Development (MHRD), Govt. of India has established <q>MHRD</q>s Innovation Cell (MIC)&apos; to systematically foster the culture of Innovation amongst all Higher Education Institutions (HEIs). The primary mandate of MIC is to encourage, inspire and nurture young students by supporting them to work with new ideas and transform them into prototypes while they are informative years. MIC has envisioned encouraging creation of <q>Institution</q>s Innovation Council (IICs)&apos; across selected HEIs.
+	        </p>
+        </div>
     </div>
-    <br><br><br><br>
-    <div class="about-us">
-        <h2 style="text-align: center;width: 100%" data-aos="fade-up">Our Vision</h2>
-        <p data-aos="fade-up">
-            We want to create a vibrant local innovation ecosystem. IIC TMSL is the Start-up supporting Mechanism of Techno Main Saltlake. We want to establish Function Ecosystem for Scouting Ideas and Pre-incubation of Ideas and want to develop better Cognitive Ability for TMSL Students.<br><br>
-        </p>
+    <div class="about-us vis">
+    	<img src="./svg/dreamer.svg" data-aos="fade-right">
+        <div class="content" data-aos="fade-left" onmousemove="hov(event,this,'#main > div.about-us.vis > div > div');" onmouseout="rmhover('#main > div.about-us.vis > div > div')">
+        	<div class="marker"></div>
+        	<h2>Our Vision</h2>
+	        <p>
+	            We want to create a vibrant local innovation ecosystem. IIC TMSL is the Start-up supporting Mechanism of Techno Main Saltlake. We want to establish Function Ecosystem for Scouting Ideas and Pre-incubation of Ideas and want to develop better Cognitive Ability for TMSL Students.
+	        </p>
+        </div>
     </div>
-    <div class="about-us">
-        <h2 style="text-align: center;width: 100%" data-aos="fade-up">Functions of IIC TMSL</h2>
-        <ul data-aos="fade-up" >
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px" style="font-size: 19px;">To conduct various innovation and entrepreneurship-related activities prescribed by Central MIC in time bound fashion.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Identify and reward innovations and share success stories.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Organize periodic workshops/ seminars/ interactions with entrepreneurs, investors, professionals and create a mentor pool for student innovators.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Network with peers and national entrepreneurship development organizations.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Create an Institution&apos;s Innovation portal to highlight innovative projects carried out by institution&apos;s faculty and students.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Organize Hackathons, idea competition, business fair, mini-challenges etc. with the involvement of industries.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Organize industrial visits once or twice a year.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Build a start-up registration point where budding start-ups across the college can register their companies.</li>
-             <li style="font-size: 19px;margin: 3px 0;font-family: monospace;line-height:24px">Conduct seminar/ workshop on latest technologies.</li>
-        </ul>
-    </div>
-    <br><br><br><br>
-    <div class="about-us">
-        <h2 data-aos="fade-up" style="text-align: center;width: 100%">About Us</h2>
-        <p data-aos="fade-up">
-            Inspired by the objectives and vision of IIC, a MHRD initiative, we have established IIC TMSL which is the start-up support system of Techno Main Slatlake. This cell will be conducting various innovation and entrepreneurship related activities along with organizing periodic workshops, seminars and interactions with entrepreneurs and innovators. Students will get a chance to showcase their talents by participating in various events like Hackathons, idea competitions etc. Our motto is to support innovative ideas so well that it can evolve into start-ups.
-        </p>
-    </div>
-    <div class="members">
-        <h1 data-aos="fade-up">Our Experts</h1>
-        <div class="con">
-            <div class="person" data-aos="fade-up">
-                <img
-                    src="./image/exp1.jpg">
-                <div class="content">
-                    <h3>Sabyasachi Mukhopadhyay</h3>
-                    <p>
-                        Data Scientist|TEDx Speaker|Author|Top 50 Innovator|Public Speaker|Intel Software Innovator|Google Developer Expert,ML
-                    </p>
-                </div>
-                <div class="social-media">
-                    <a target = "_blank" href="https://www.linkedin.com/in/sabyasachi-mukhopadhyay-303a1027/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="person" data-aos="fade-up">
-                <img
-                    src="./image/exp2.jpg">
-                <div class="content">
-                    <h3>Aaquib Hussain</h3>
-                    <p>
-                        Chief Dreamer and Director at I&We_WeC Minds| National Academic Partner - Startup India Yatra | TEDx Speaker.
-                    </p>
-                </div>
-                <div class="social-media" data-aos="fade-up">
-                    <a target = "_blank" href="https://www.linkedin.com/in/aaquibh/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="person" data-aos="fade-up">
-                <img src="./image/exp3.jpg">
-                <div class="content">
-                    <h3>RAVI RANJAN</h3>
-                    <p>Entrepreneurship Evangelist, Startup Expert, 2 Times TEDx Speaker, IVLP Fellow Dept. of States, Ex NASSCOM/IAN/Ennovent
-                    </p>
-                </div>
-                <div class="social-media">
-                    <a target = "_blank" href="https://www.linkedin.com/in/raviranjan2/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="person" data-aos="fade-up">
-                <img src="./image/exp6.jpg">
-                <div class="content">
-                    <h3>Sanket Sarkar</h3>
-                    <p style="text-align: center;">CEO : TeamCognito</p>
-                </div>
-                <div class="social-media">
-                    <a target = "_blank" href="https://www.linkedin.com/in/infosecsanket/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="person" data-aos="fade-up">
-                <img src="./image/exp4.jpg">
-                <div class="content">
-                    <h3>Animesh Gaurav</h3>
-                    <p>Digital Innovator and Software Developer , TCS.</p>
-                </div>
-                <div class="social-media">
-                    <a target = "_blank" href="https://www.linkedin.com/in/gauravanimesh/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
 
-            <div class="person" data-aos="fade-up">
-                <img src="./image/exp5.jpg">
-                <div class="content">
-                    <h3>Rahulkumar Singh</h3>
-                    <p>Biomedical R&D Analyst, MeFy</p>
-                </div>
-                <div class="social-media">
-                    <a target = "_blank" href="https://www.linkedin.com/in/rahuljsingh/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+    <div class="function" class="about-us">
+        <h2>Functions of IIC TMSL</h2>
+        <ol data-aos="fade-left" >
+             <li>To conduct various innovation and entrepreneurship-related activities prescribed by Central MIC in time bound fashion.</li>
+             <li>Identify and reward innovations and share success stories.</li>
+             <li>Organize periodic workshops/ seminars/ interactions with entrepreneurs, investors, professionals and create a mentor pool for student innovators.</li>
+             <li>Network with peers and national entrepreneurship development organizations.</li>
+             <li>Create an Institution&apos;s Innovation portal to highlight innovative projects carried out by institution&apos;s faculty and students.</li>
+             <li>Organize Hackathons, idea competition, business fair, mini-challenges etc. with the involvement of industries.</li>
+             <li>Organize industrial visits once or twice a year.</li>
+             <li>Build a start-up registration point where budding start-ups across the college can register their companies.</li>
+             <li>Conduct seminar/ workshop on latest technologies.</li>
+        </ol>
+    </div>
+    <div class="about-us">
+        <img src="./svg/aboutus.svg" data-aos="fade-right">
+        <div class="content" data-aos="fade-left" onmousemove="hov(event,this,'#main > div:nth-child(7) > div > div');" onmouseout="rmhover('#main > div:nth-child(7) > div > div')">
+            <div class="marker"></div>
+            <h2>About Us</h2>
+            <p>
+                Inspired by the objectives and vision of IIC, a MHRD initiative, we have established IIC TMSL which is the start-up support system of Techno Main Slatlake. This cell will be conducting various innovation and entrepreneurship related activities along with organizing periodic workshops, seminars and interactions with entrepreneurs and innovators. Students will get a chance to showcase their talents by participating in various events like Hackathons, idea competitions etc. Our motto is to support innovative ideas so well that it can evolve into start-ups.
+            </p>
+        </div>
+    </div>
+    <h1 id="memberh1" data-aos="fade-right">Our Experts</h1>
+    <div class="members">
+        <div class="person">
+            <img
+                src="./image/exp1.jpg">
+            <div class="content">
+                <h3>Sabyasachi Mukhopadhyay</h3>
+                <p>
+                    Data Scientist|TEDx Speaker|Author|Top 50 Innovator|Public Speaker|Intel Software Innovator|Google Developer Expert,ML
+                </p>
+                <a target = "_blank" href="https://www.linkedin.com/in/sabyasachi-mukhopadhyay-303a1027/"><i class="fab fa-linkedin-in"></i></a>
+                <span></span>
+            </div>
+        </div>
+        <div class="person">
+            <img
+                src="./image/exp2.jpg">
+            <div class="content">
+                <h3>Aaquib Hussain</h3>
+                <p>
+                    Chief Dreamer and Director at I&We_WeC Minds| National Academic Partner - Startup India Yatra | TEDx Speaker.
+                </p>
+                <a target = "_blank" href="https://www.linkedin.com/in/aaquibh/"><i class="fab fa-linkedin-in"></i></a>
+                <span></span>
+            </div>
+        </div>
+        <div class="person">
+            <img src="./image/exp3.jpg">
+            <div class="content">
+                <h3>RAVI RANJAN</h3>
+                <p>Entrepreneurship Evangelist, Startup Expert, 2 Times TEDx Speaker, IVLP Fellow Dept. of States, Ex NASSCOM/IAN/Ennovent
+                </p>
+                <a target = "_blank" href="https://www.linkedin.com/in/raviranjan2/"><i class="fab fa-linkedin-in"></i></a>
+                <span></span>
+            </div>
+        </div>
+        <div class="person">
+            <img src="./image/exp6.jpg">
+            <div class="content">
+                <h3>Sanket Sarkar</h3>
+                <p style="text-align: center;">CEO : TeamCognito</p>
+                <a target = "_blank" href="https://www.linkedin.com/in/infosecsanket/"><i class="fab fa-linkedin-in"></i></a>
+                <span></span>
+            </div>
+        </div>
+        <div class="person">
+            <img src="./image/exp4.jpg">
+            <div class="content">
+                <h3>Animesh Gaurav</h3>
+                <p>Digital Innovator and Software Developer , TCS.</p>
+                <a target = "_blank" href="https://www.linkedin.com/in/gauravanimesh/"><i class="fab fa-linkedin-in"></i></a>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="person">
+            <img src="./image/exp5.jpg">
+            <div class="content">
+                <h3>Rahulkumar Singh</h3>
+                <p>Biomedical R&D Analyst, MeFy</p>
+                <a target = "_blank" href="https://www.linkedin.com/in/rahuljsingh/"><i class="fab fa-linkedin-in"></i></a>
+                <span></span>
             </div>
         </div>
     </div>
@@ -169,154 +185,15 @@
             <a target = "_blank" href="https://www.linkedin.com/company/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-linkedin-in"></i></a>
         </p>
     </footer>
+	</div>
+
     <!-- ===========================Add Js Plugins ===================================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./jquery.js"></script>
     <script src="./fontawesome-free-5.11.2-web/js/fontawesome.min.js"></script>
-    <script type="text/javascript">
-
-  
-/*========================================================================*/
-/*=======================================================================================
-particlesJS('particles-js',{
-  "particles": {
-    "number": {
-      "value":55,
-      "density": {
-        "enable": true,
-        "value_area": 1000
-      }
-    },
-    "color": {
-      "value": "#dbd9d9"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 10,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.2,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 10,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 80,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 300,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 2
-    },
-    "move": {
-      "enable": true,
-      "speed": 12,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 800,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 800,
-        "size": 80,
-        "duration": 2,
-        "opacity": 0.8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
-
-);
-==============================================================================*/
-        var load = document.querySelector(".load");
-        window.addEventListener('load', function () {
-            $('.load').fadeOut();
-        });
-
-
-
-        AOS.init({
-            duration: 2000,
-        });
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() && window.innerWidth >= 760) {
-                $('nav').addClass('a animated slideInDown');
-                //console.log("COme");
-            }
-            else {
-                $('nav').removeClass('a animated slideInDown');
-            }
-        });
-        $(document).ready(() => {
-            $('.menu h4').click(() => {
-                $("nav ul").toggleClass('active');
-            })
-        })
-        console.clear();
-    </script>
+    <script src="./particles.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/about.js"></script>
 </body>
 
 </html>
