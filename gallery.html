@@ -2,55 +2,65 @@
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./stylesheets/gallery.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/nav.css">
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" />
-    <link rel="stylesheet" href="./animate.css">
   <head>
     <title>Image Gallery</title>
   </head>
-<body>
+<body id="particles-js">
   <div class="img-show">
     <i class="fas fa-times-circle"></i>
     <img src="" alt="">
     <div class="left"><i class="fas fa-arrow-left"></i></div>
     <div class="right"><i class="fas fa-arrow-right"></i></div>
   </div>
-  <div class="responsive-bar">
-            <div class="icon">
-                <a href="index.html">
-                  <img src="./image/IIC.png">
-                </a>
-            </div>
-            <div class="menu">
-                <h4>MENU</h4>
-            </div>
-        </div>
-        <!--============================Navbar SetUp Html==========================-->
-        <nav>
-            <div class="icon">
-                <a href="index.html">
-                  <img src="./image/IIC.png">
-                </a>
-            </div>
+  
+  <!--============================End of Navbar SetUp Html==========================-->
+  <!--LOADING-->
+  <div class="load">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <!--End of LOADING-->
+  <!--NavbarSetUp-->
+    <nav>
+        <div class="links">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
                 <li><a href="activity.html">ACTIVITY</a></li>
-                <li><a href="#" class="active">GALLERY</a></li>
+                <li class="active"><a href="gallery.html">GALLERY</a></li>
                 <li><a href="team.html">TEAM</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
+                <div class="marker"></div>
             </ul>
-        </nav>
-        <!--============================End of Navbar SetUp Html==========================-->
-        <!--LOADING-->
-        <div class="load">
-          <span class="loader"><span class="loader-inner"></span></span>
         </div>
-        <!--End of LOADING-->
-
-        <div class="header">
-          <h1>EAD</h1>
+    </nav>
+    <!--FixedBar For Top of the Page-->
+    <div class="fixedbar">
+        <div>
+            <a href="#">
+                <img src="./image/IIC.png">
+            </a>
         </div>
+        <div>
+            <i class="far fa-moon" id="day-night"></i>
+            <a class="btn">Contact Us</a>
+            <div class="handburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--Scroll Top Option-->
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div id="main">
+      <div class="header">
+      <h1>EAD</h1>
+    </div>
     <!-- Photo Grid -->
     <div class="row"> 
       <div class="column">
@@ -126,87 +136,12 @@
               <a target = "_blank" href="https://www.linkedin.com/company/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-linkedin-in"></i></a>
           </p>
       </footer>
-      <script src="./jquery.js"></script>
-      <script src="./fontawesome-free-5.11.2-web/js/fontawesome.min.js"></script>
-    <script type="text/javascript">
-      window.addEventListener('load', function () {
-          $('.load').fadeOut(1500);
-        });
-
-        let ead = [1,8,15,22,2,9,16,23,5,10,17,24,3,11,18,21,4,12,19,14,6,13,20,25];
-        let estart = [1, 5, 9, 13, 3, 6, 10, 14, 4, 7, 11, 15, 8, 12, 16];
-
-      $(window).on('scroll', function () {
-            if ($(window).scrollTop() && window.innerWidth >= 760) {
-                $('nav').addClass('a animated slideInDown');
-                //console.log("COme");
-            }
-            else {
-                $('nav').removeClass('a animated slideInDown');
-            }
-        });
-        $(document).ready(() => {
-            $('.menu h4').click(() => {
-                $("nav ul").toggleClass('active');
-            })
-        })
-
-        $(".column img").click(function(){
-          $("body > div.img-show > img").attr("src", $(this).attr("src"));
-          $("body > div.img-show").addClass("active");
-        });
-        
-        /*$("body > div.img-show").click(function(){
-            $(this).removeClass("active");
-        })*/
-
-
-        $(".img-show .left").click(()=>{
-          if($(".img-show img").attr("src").length >= 26){
-            //For Estart
-            let index = $(".img-show img").attr("src").slice("./imagegallery/estart".length, $(".img-show img").attr("src").length - 4);
-            if(estart.indexOf(Number(index))>0){
-              let str = "./imagegallery/estart"+String(estart[estart.indexOf(Number(index))-1])+".jpg";
-              $(".img-show img").attr("src", str);
-            }else{
-              let str = "./imagegallery/ead" + String(ead[ead.length - 1]) + ".jpg";
-              $(".img-show img").attr("src", str);
-              console.log(str)
-            }
-          }else{
-            //For EAD
-            let index = $(".img-show img").attr("src").slice("./imagegallery/ead".length, $(".img-show img").attr("src").length - 4);
-            if(ead.indexOf(Number(index))>0){
-              let str = "./imagegallery/ead" + String(ead[ead.indexOf(Number(index)) - 1]) + ".jpg";
-              $(".img-show img").attr("src", str);
-            }
-          }
-        })
-
-        $(".img-show .right").click(() => {
-            if ($(".img-show img").attr("src").length >= 26) {
-              //For Estart
-              let index = $(".img-show img").attr("src").slice("./imagegallery/estart".length, $(".img-show img").attr("src").length - 4);
-              if (estart.indexOf(Number(index)) < estart.length-1) {
-                let str = "./imagegallery/estart" + String(estart[estart.indexOf(Number(index)) + 1]) + ".jpg";
-                $(".img-show img").attr("src", str);
-              }
-            } else {
-              //For EAD
-              let index = $(".img-show img").attr("src").slice("./imagegallery/ead".length, $(".img-show img").attr("src").length - 4);
-              if (ead.indexOf(Number(index)) < ead.length-1) {
-                let str = "./imagegallery/ead" + String(ead[ead.indexOf(Number(index)) + 1]) + ".jpg";
-                $(".img-show img").attr("src", str);
-              } else {
-                let str = "./imagegallery/estart" + String(estart[0]) + ".jpg";
-                $(".img-show img").attr("src", str);
-              }
-            }
-          })
-
-          $(".fa-times-circle").click(()=>{
-              $("body > div.img-show").removeClass("active");
-          })
-    </script>
+    </div>
+    
+    <script src="./jquery.js"></script>
+    <script src="./fontawesome-free-5.11.2-web/js/fontawesome.min.js"></script>
+    <script src="./particles.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 </html>

@@ -1,165 +1,25 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,500;1,600&family=Poppins&family=Russo+One&display=swap');
+*{
   margin: 0;
-  font-family: Arial;
-  overflow-x: hidden;
+  padding: 0;
 }
-/*=======================Nav Bar Setup======================*/
-nav{
-    z-index:99999;
-    position: fixed;
-    top: 0;
-    left: 0;
+:root{
+  --background : #fff;
+  --color: #000;
+}
+body,html{
     width: 100%;
-    height: 100px;
-    padding: 10px 100px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    background: rgba(255,255,255,0.3);
-    color:#000;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background);
 }
-nav .icon{
-    float: left;
-}
-nav .icon img{
-    height: 80px;
-    -webkit-transition: 0.8s;
-    -o-transition: 0.8s;
-    transition: 0.8s;
-}
-nav ul{
-    z-index:1;
-    float: right;
-    margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-nav ul li{
-    z-index:99999;
-    list-style-type: none;
-}
-nav ul li a{
-    z-index:1;
-    font-size: 16px;
-    text-decoration: none;
-    line-height: 80px;
-    color: #000;
-    padding: 5px 20px;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-
-nav.a{
-    z-index: 99999;
-    background: rgba(0,0,0,0.6);
-    padding: 10px 50px;
-    max-height: 80px;
-}
-nav.a img{
-    height: 60px;
-}
-
-nav.a ul li a{
-    color: #fff;
-}
-.responsive-bar{
-    display: none;
-}
-@media screen and (max-width: 1060px){
-    .responsive-bar{
-        display: block;
-        width: 100%;
-        max-height: 60px;
-        background: white;
-        position: fixed;
-        left: 0;
-        top: 0;
-        padding: 5px 20px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        z-index: 99999;
-    }
-    .responsive-bar .icon img{
-        float: left;
-        height: 50px;
-    }
-    .responsive-bar .menu h4{
-        margin: 0;
-        padding: 0;
-        line-height: 50px;
-        position: relative;
-        float: right;
-        color: #000;
-        cursor: pointer;
-    }
-    nav{
-        z-index: 99999;
-        background: black;
-        height: 0px;
-        padding: 0;
-    }
-    nav .icon{
-        display: none;
-    }
-    nav ul{
-        z-index: 99999;
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        left: 0;
-        background: black;
-        float: none;
-        display: none;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
-        background: #fff;
-    }
-    nav ul.active{
-        display: block;
-    }
-    nav ul li{
-        z-index: 99999;
-        width: 100%;
-    }
-    nav ul li a{
-        z-index: 99999;
-        display: block;
-        position: relative;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-        line-height: 30px !important;
-        color: #fff;
-        background: rgba(0,0,0,0.4);
-    }
-}nav ul li a.active,
-nav ul li a:hover{
-    color: #fff;
-    background: red;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    text-decoration: none;
-}
-/*======================= End of Nav Bar Setup======================*/
 /*==================================Photo Gallery style==================================*/
 .header {
   position: relative;
   margin-top: 100px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,4 +328,25 @@ nav ul li a:hover{
   100% {
     height: 0%;
   }
+}
+/*======================= Particle Setup========================*/
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}
+/*Style For footer for Transition*/
+.footerIcon:hover{
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
