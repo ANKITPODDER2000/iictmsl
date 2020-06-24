@@ -1,8 +1,3 @@
-window.addEventListener('load', function () {
-    $('.load').fadeOut(1500);
-});
-
-
 let color = "#000"; // for background particles color.
 particlesJS('particles-js', {
     "particles": {
