@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Contact Page</title>
     <link rel="stylesheet" type="text/css" href="./stylesheets/contact.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" />
 </head>
-
-<body>
+<body id="particles-js">
     <!--Loader-->
     <div class="load">
         <div class="loader">
@@ -22,33 +20,129 @@
         </div>
     </div>
     <!--============================Navbar SetUp Html==========================-->
-    <div class="responsive-bar">
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
+    <!--NavbarSetUp-->
+    <nav>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
+                <li><a href="activity.html">ACTIVITY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li class="active"><a href="contact.html">CONTACT</a></li>
+                <div class="marker"></div>
+            </ul>
         </div>
-        <div class="menu">
-            <h4>MENU</h4>
+    </nav>
+    <!--FixedBar For Top of the Page-->
+    <div class="fixedbar">
+        <div>
+            <a href="#">
+                <img src="./image/IIC.png">
+            </a>
+        </div>
+        <div>
+            <i class="far fa-moon" id="day-night"></i>
+            <a class="btn">Contact Us</a>
+            <div class="handburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
-    <nav>
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
+    <!--Scroll Top Option-->
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+
+
+
+
+
+    <div id="main">
+        <div class="logo">
+            <img id="svg" src="./svg/contact.svg">
+            <div class="box1">
+                <img src="./image/IIC2.png">
+                <h1 id="ban"><span id="typed"></span></h1>
+            </div>
+        </div>  
+        <h1 id="boh">BOARD OF HEADS</h1>
+        <div class="boh">
+            <div class="content" id="initialblock" onmouseover="mousein(this);" onmouseout="mouseout()">
+                <h1>Prattay Chakrabarty</h1>
+                <h3>Intellectual Property Rights Coordinator & Student Lead for IIC TMSL</h3>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 85150 05676</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbspprattay2015@gmail.com</p>
+            </div>
+
+            <div class="content" onmouseover="mousein(this);">
+                <h1>Raj Chhetri</h1>
+                <h3>Start-up Coordinator</h3>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 70036 45656</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbsprajchhetriedu@gmail.com</p>
+            </div>
+
+            <div class="content" onmouseover="mousein(this);">
+                <h1>Rounak Chourasia</h1>
+                <h3>Innovation Coordinator & Student Co-lead for IIC TMSL</h3>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 72788 08933</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbsprounak122@gmail.com</p>
+            </div>
+
+            <div class="content" onmouseover="mousein(this);">
+                <h1>Finance Coordinator</h1>
+                <h3>Sougata Konar</h3>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 98320 25099</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbspsougatakonar96@gmail.com</p>
+            </div>
+
+            <div class="content" onmouseover="mousein(this);">
+                <h1>Amlan Mukherjee</h1>
+                <h3>Internship Coordinator</h3>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 95644 78540</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbspamlanph.05@gmail.com</p>
+            </div>
+
+            <div class="content" onmouseover="mousein(this);">
+                <h1>Tanushree Nayak </h1>
+                <h3>Social Media Coordinator</h3>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 73608 95979</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbsptanusnyk@gmail.com</p>
+            </div>
+
+            <div class="content" onmouseover="mousein(this);">
+                <h1>Souvik Mishra</h1>
+                <h3>Management Coordinator</h3>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 86174 90989</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbspsowvikmisra2016@gmail.com</p>
+            </div>
+            <div class="marker"></div>
         </div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
-            <li><a href="activity.html">ACTIVITY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="#" class="active">CONTACT</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <!--============================End of Navbar SetUp Html==========================-->
-        <!--============================Start Of Contact(Phone No. And Address)==========================-->
-        <h1 class="con animated fadeInLeft">Contact Us</h1>
-        <span class="underlineCon animated fadeInRight"></span>
+        <section class="form">
+            <form>
+                <h1>Contact Us</h1>
+                <div class="box">
+                    <input type="text" placeholder="Name" name="">
+                    <input type="number" placeholder="Phone no." name="">
+                    <input type="mail" placeholder="Mail id" name="">
+                    <textarea placeholder="comment"></textarea>
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+            <div class="add">
+                <h1>Contact<br>Information</h1>
+                <h2>TECHNO INDIA : EM-4/1, Sector-V,<br>Salt Lake, Kolkata-700091,Wst Bengal</h2>
+                <p><i class="fas fa-phone-alt"></i>&nbsp +91 85150 05676</p>
+                <p><i class="fas fa-envelope-open"></i> &nbsp&nbspiic.tmsl@gmail.com</p>
+            </div>
+        </section>
+        <!--<div class="container">
+        <h1 class="con animated">Contact Us</h1>
         <div class="contact">
             <div class="phone">
                 <div>
@@ -74,27 +168,8 @@
                 </div>
             </div>
         </div>
-        <!--=========================End Of Contact(Phone No. And Address)====================-->
-
-        <h1 style="margin: 40px 0;text-align: center;letter-spacing: 3px">LOCATION</h1>
-
-        <!--============================Map & Address=====================================-->
-        <div class="map-add">
-            <div class="innerBx" style="margin-top: 30px">
-                <div class="map" data-aos="fade-right">
-                    <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.076443292361!2d88.42483321479212!3d22.576244085180907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02751a9d9c9e85%3A0x7fe665c781b10383!2sTechno%20Main%20Salt%20Lake!5e0!3m2!1sen!2sin!4v1571215952469!5m2!1sen!2sin" frameborder="0" style="" allowfullscreen=""></iframe>
-                </div>
-            </div>
-            <div class="add" data-aos="fade-left" style="margin-top: 60px">
-                <h3>ADDRESS</h3>
-                <br><br>
-                <h4>
-                    TECHNO INDIA : EM-4/1, Sector-V, Salt Lake, Kolkata-700091,Wst Bengal<br><br>
-                </h4>
-            </div>
-        </div>
-    </div>
-    <br><br><br>
+        
+    </div>-->
     <footer
         style="width: 100%;height: 50px;background: black;color: white;line-height: 50px;text-align: center;margin-top: 0px">
         <p style="margin: 0">Contact Us - 
@@ -104,32 +179,13 @@
             <a target = "_blank" href="https://www.linkedin.com/company/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-linkedin-in"></i></a>
         </p>
     </footer>
+    </div>
     <!-- ===========================Add Js Plugins ===================================-->
     <script src="./jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script type="text/javascript">
-        window.addEventListener('load', function () {
-            $('.load').fadeOut(1500);
-        });
-
-        AOS.init({
-            duration: 2000,
-        });
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() && window.innerWidth >= 800) {
-                $('nav').addClass('a animated slideInDown');
-            }
-            else {
-                $('nav').removeClass('a animated slideInDown');
-            }
-        });
-        $(document).ready(() => {
-            $('.menu h4').click(() => {
-                $("nav ul").toggleClass('active');
-            })
-        })
-        console.clear();
-    </script>
+    <script src="./particles.js"></script>
+    <script src="typed.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
-
 </html>
