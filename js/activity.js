@@ -1,67 +1,7 @@
 window.addEventListener('load', function () {
-  $('.load').fadeOut(1500);
+    $('.load').fadeOut(1500);
 });
 
-let ead = [1,8,15,22,2,9,16,23,5,10,17,24,3,11,18,21,4,12,19,14,6,13,20,25];
-let estart = [1, 5, 9, 13, 3, 6, 10, 14, 4, 7, 11, 15, 8, 12, 16];
-
-
-$(".column img").click(function(){
-  $("body > div.img-show > img").attr("src", $(this).attr("src"));
-  $("body > div.img-show").addClass("active");
-});
-
-/*$("body > div.img-show").click(function(){
-    $(this).removeClass("active");
-})*/
-
-
-$(".img-show .left").click(()=>{
-  if($(".img-show img").attr("src").length >= 26){
-    //For Estart
-    let index = $(".img-show img").attr("src").slice("./imagegallery/estart".length, $(".img-show img").attr("src").length - 4);
-    if(estart.indexOf(Number(index))>0){
-      let str = "./imagegallery/estart"+String(estart[estart.indexOf(Number(index))-1])+".jpg";
-      $(".img-show img").attr("src", str);
-    }else{
-      let str = "./imagegallery/ead" + String(ead[ead.length - 1]) + ".jpg";
-      $(".img-show img").attr("src", str);
-      console.log(str)
-    }
-  }else{
-    //For EAD
-    let index = $(".img-show img").attr("src").slice("./imagegallery/ead".length, $(".img-show img").attr("src").length - 4);
-    if(ead.indexOf(Number(index))>0){
-      let str = "./imagegallery/ead" + String(ead[ead.indexOf(Number(index)) - 1]) + ".jpg";
-      $(".img-show img").attr("src", str);
-    }
-  }
-})
-
-$(".img-show .right").click(() => {
-    if ($(".img-show img").attr("src").length >= 26) {
-      //For Estart
-      let index = $(".img-show img").attr("src").slice("./imagegallery/estart".length, $(".img-show img").attr("src").length - 4);
-      if (estart.indexOf(Number(index)) < estart.length-1) {
-        let str = "./imagegallery/estart" + String(estart[estart.indexOf(Number(index)) + 1]) + ".jpg";
-        $(".img-show img").attr("src", str);
-      }
-    } else {
-      //For EAD
-      let index = $(".img-show img").attr("src").slice("./imagegallery/ead".length, $(".img-show img").attr("src").length - 4);
-      if (ead.indexOf(Number(index)) < ead.length-1) {
-        let str = "./imagegallery/ead" + String(ead[ead.indexOf(Number(index)) + 1]) + ".jpg";
-        $(".img-show img").attr("src", str);
-      } else {
-        let str = "./imagegallery/estart" + String(estart[0]) + ".jpg";
-        $(".img-show img").attr("src", str);
-      }
-    }
-  })
-
-  $(".fa-times-circle").click(()=>{
-      $("body > div.img-show").removeClass("active");
-  })
 
 let color = "#000"; // for background particles color.
 particlesJS('particles-js', {
@@ -326,3 +266,15 @@ $("#day-night").click(()=>{
     });
     //$(".fixedbar div a img").attr("src","")
 });
+//Screen Header
+const screen =  document.querySelector(".screen");
+const hover = (e)=>{
+    screen.style.left= e.offsetLeft + "px";
+    screen.style.top= e.offsetTop + "px";
+    screen.style.width= e.offsetWidth + "px";
+    screen.style.height= e.offsetHeight + "px";
+    screen.style.opacity = "1";
+}
+const hoveroff = ()=>{
+    screen.style.opacity = "0";
+}

@@ -1,275 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,500;1,600&family=Poppins&family=Russo+One&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    height: 100%;
+:root{
+    --background : #fff;
+    --color: #000;
+}
+body,html{
     width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background);
+}
+/*===========================Style of Header========================*/
+.container{
+    --background: #092d33;
+    --col : #266471;
+    background: var(--background);
+    position: relative;
+    width: 100%;
+    padding: 200px 10px 0 10px;
+    min-height: calc(80vh + 140px);
+    display: grid;
+    grid-template-rows: 48% 48%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "box1 box2 box5"
+        "box3 box4 box5"
+    ;
+}
+/*Responsive*/
+@media screen and (max-width: 1150px){
+    .container{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 250px 250px 250px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "box1 box3"
+            "box2 box5"
+            "box4 box5"
+        ;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 580px){
+    .container{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(250px,auto);
+        grid-template-areas: 
+            "box1"
+            "box2"
+            "box3" 
+            "box4"
+            "box5"
+        ;
+        padding-bottom: 60px;
+    }
+    div.container div.textBox{
+        position: relative;
+        width: 100%;
+        height: 250px;
+        padding: 30px 25px;
+    }
+    .container div.textBox{
+        padding: 30px 25px !important;
+    }
 }
 
-/*===========================Style of Header========================
-header{
-    z-index: -9999999999999;
+/*==================================All Style for TextBoxes====================================*/
+.container div.textBox{
+    background: red;
+    margin: 5px;
+    padding: 30px 25px 20px 25px;
+    cursor: default;
+    background: var(--background);
+    color: var(--col);
+    transition: 0.5s;
+    box-shadow: 0px 0px 0px 2px #0003;
+}
+.container div.textBox:hover{
+    box-shadow: none;
+}
+.container div.textBox h3{
     position: relative;
+    display: inline-block;
+    font-size: 23px;
+    word-spacing: 7px;
+    margin-bottom: 15px;
+    z-index: 3;
+    transition: 0.5s;
+    font-family: 'Russo One', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;    
+}
+.container div.textBox h4{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 14px;
+    z-index: 3;
+    transition: 0.5s;
+    font-family: 'Russo One', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;    
+}
+.container div.textBox:hover h3{
+    color: #fff;
+}
+.container div.textBox:hover h4{
+    color: #fff;
+}
+.container div.textBox h3::before{
+    content: '';
+    position: absolute;
+    bottom: -2.5px;
+    left: 0;
+    width: 100%;
+    height: 1px !important;
+    background: #fff;
+    transition: 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.container div.textBox:hover h3::before{
+    transform: scaleX(1);
+}
+.container div.textBox h3::after{
+    content: '';
+    position: absolute;
+    bottom: -6.5px;
+    left: 0;
+    width: 100%;
+    height: 1px !important;
+    background: #fff;
+    transition: 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.container div.textBox:hover h3::after{
+    transform: scaleX(1);
+}
+.container div.textBox p{
+    position: relative;
+    line-height: 20px;
+    letter-spacing: 1px;
+    z-index: 3;
+    transition: 0.5s;
+}
+.container div.textBox:hover p{
+    color: #fff;
+}
+.container div.textBox:nth-child(1){
+    grid-area: box1;
+}
+.container div.textBox:nth-child(2){
+    grid-area: box2;
+}
+.container div.textBox:nth-child(3){
+    grid-area: box3;
+}
+.container div.textBox:nth-child(4){
+    grid-area: box4;
+}
+.container div.textBox:nth-child(5){
+    grid-area: box5;
+}
+
+/*==================================All Style for BTN====================================*/
+.container div.textBox .btn1{
+    position: relative;
+    box-sizing: unset;
+    display: inline-block;
+    padding: 5px 14px;
+    margin-top: 14px;
+    border: 1.25px solid var(--col);
+    color: var(--col);
+    text-decoration: none;
+    z-index: 3;
+    transition: 0.5s;
+    z-index: 5;
+}
+.container div.textBox .btn1::before{
+    content: '';
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    color: black;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: -2;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+.container div.textBox:nth-child(even) .btn1::before{
+    transform-origin: right;
+}
+.container div.textBox:nth-child(odd) .btn1::before{
+    transform-origin: left;
+}
+.container div.textBox:hover a.btn1{
+    color: #fff;
+    border-color: #fff;
+}
+.container div.textBox .btn1:hover::before{
+    transform: scaleX(1);
+}
+.container div.textBox:hover .btn1:hover::before{
+    transform: scaleX(1);
+}
+.container div.textBox .btn1:hover{
+    color: #000;
+}
+.container div.textBox:hover .btn1:hover{
+    color: #000;
+}
+/*
+.container div.textBox .btn1:hover{
+    border-color: #fff;
+    background: #fff;
+    color: #000;
+}
+.container div.textBox:hover .btn1:hover{
+    border-color: #fff;
+    background: #fff;
+    color: #000;
+}
+*/
+/*==================================All Style for screen====================================*/
+.screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    background: #f7337b;
+    z-index: 1;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container h1.heading{
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: lowercase;
+    display: block;
+    color: #266471;
+    letter-spacing: 5px;
+}
+.container h1.heading span{
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 500px){
+    .container h1.heading{
+        font-size: 22px;
+    }
+    .container h1.heading span{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 350px){
+    .container h1.heading{
+        font-size: 19px;
+    }
+    .container h1.heading span{
+        font-size: 22px;
+    }
+}
+
+
+
+
+/*=======================EAD & ESTART========================*/
+.ead{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#092d33,transparent);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
+    color: var(--color);
 }
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+.ead .image{
+    position: relative;
+    width: 350px;
+    height: auto;
+    margin: 20px 0;
+}
+.ead .image img{
+    position: relative;
+    width: 350px;
+    object-fit: contain;
+    transition: 0.5s;
+}
+.ead .image img:hover{
+    filter: grayscale(1);
+}
+.ead .content{
+    position: relative;
+    margin: 20px 0;
+    width: 600px;
+}
+.ead .content .box{
+    margin-bottom: 30px;
+}
+.ead .content .box h1{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.ead .content .box p{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color);
+}
+@media screen and (max-width: 770px){
+    .ead .content{
+        position: relative;
+        width: 80%;
+        text-align: center;
     }
 }
-header div{
+@media screen and (max-width: 530px){
+    .ead .image{
+        position: relative;
+        width: 80%;
+    }
+    .ead .image img{
+        position: relative;
+        width: 100%;
+    }
+    .ead .content .box h1{
+        font-size: 24px;
+    }
+    .ead .content .box p{
+        font-size: 15px;
+    }
+}
+/*==========================IIC-SMP=====================================*/
+.iicsmp {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    min-height: 100vh;
+}
+.iicsmp h1,
+h1#INITIATIVES{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    background: -o-linear-gradient(45deg ,red,purple);
+    background: linear-gradient(45deg ,red,purple);
+    -webkit-background-clip : text;
+    margin-bottom: 25px;
+    -webkit-text-fill-color : transparent;
+}
+.iicsmp p.subdetails{
+    width: 600px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    color: var(--color);
+}
+@media screen and (max-width: 650px){
+    .iicsmp h1{
+        position: relative;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+    .iicsmp p.subdetails{
+        width: 80%;
+    }
+}
+
+.iicsmp .content{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.iicsmp .content div.box{
+    width: 350px;
+    height: 350px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: 1s;
+    z-index: 10;
+    color: var(--color);
+    transition: 0.5s;
 }
-header div p{
-    line-height: 40px;
+.iicsmp .content div.box:hover{
+    color: var(--background);
+    background:  var(--color);
 }
-header div p span{
-    font-weight: bolder;
-    font-size: 60px;
-}
-header div p span.conetnt{
-    color: white;
-    letter-spacing: 2px;
+.iicsmp .content div.box h2{
     position: relative;
-    font-size: 100px;
-    line-height: 50px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
-@media screen and (max-width: 1302px){
-    header div p span.conetnt{
-        font-size: 80px;
-    }
-}
-@media screen and (max-width: 1030px){
-    header div p span.conetnt{
-        font-size: 60px;
-    }
-}
-@media screen and (max-width: 843px){
-    header div p span.conetnt{
-        font-size: 40px;
-    }
-}
-@media screen and (max-width: 550px){
-    header div p span.conetnt{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 310px){
-    header div p span.conetnt{
-        font-size: 24px;
-    }
-}
-header div p span.conetnt:before{
-    content: '';
-    animation: animate 7s linear infinite ;
-}
-@keyframes animate{
-    0%{
-        content: 'Think Big';
-    }
-    20%{
-        content: 'Do Your Work Now';
-    }
-    40%{
-        content: 'Never Give Up';
-    }
-    60%{
-        content: 'Try Again';
-    }
-    80%{
-        content: 'Restart Again';
-    }
-    100%{
-        content: 'Do Again';
-    }
-}
-@media screen and (max-width: 900px){
-    header div{
-        max-width: 600px;
-        font-size: 21px;
-    }
-}
-@media screen and (max-width: 650px){
-    header div{
-        max-width: 500px;
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 450px){
-    header img{
-        width: 150px;
-        height: 150px;
-        margin-top: 40px;
-    }
-    header div{
-        max-width: 300px;
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 450px){
-    .mainLine{
-        font-size: 12px;
-    }
-}
-===========================End of Style of Header========================*/
-/*===========================Start of Style of Activity========================*/
-.activity{
+.iicsmp .content div.box h3{
     position: relative;
-    margin-top: 70px;
-    max-width: 100%;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-.activity .content{
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}
-.activity .content .box{
-    position: relative;
-    background: #fff;
-    max-width: 300px;
-    height: 350px;
-    padding: 50px 20px;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 15px;
-    border: 1px solid black;
-}
-/*Code not End */
-.stycky .box .ntent .box h3{
-    z-index: 99999;
-    position: relative;
-    margin-bottom: 30px;
-    font-weight: bolder;
-    letter-spacing: 2px;
-}
-.activity .content .box h3{
-    position: relative;
-    line-height: 20px;
-    letter-spacing: 2px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    text-align: center;
+    font-size: 18px;
     margin-bottom: 20px;
-    font-size: 25px;
 }
-.activity .content .box:hover h3,.activity .content .box:hover p{
-    color: white;
-}
-.activity .content .box p{
-    z-index: 99999;
+.iicsmp .content div.box p{
     position: relative;
-    line-height: 25px;
-    letter-spacing: 2px;
+    font-size: 16px;
 }
-.activity .content .box h1{
-    display: block;
+.initiative{
     position: relative;
-    margin: 0 auto 20px;
-    color : #fff;
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    border-radius: 50%; 
-    -webkit-transition: 1s; 
-    -o-transition: 1s; 
-    transition: 1s;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+/*=======================INITIATIVE===============================*/
+.about-us{
+    width: 100%;
+    min-height: 30vh;
+    color: var(--color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+.about-us:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.about-us img{
+    position: relative;
+    width: 450px;
+}
+.about-us div.content{
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 650px;
+    position: relative;
+}
+.about-us div.content h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.about-us div.content p{
+    font-size: 20px;
+    line-height: 24px;
+}
+@media screen and (max-width:1020px){
+    .about-us{
+        min-height: 250px;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .about-us:nth-child(even){
+        flex-direction: column;
+        text-align: left;
+    }
+    .about-us img{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .about-us div.content,
+    .about-us.vis div.content{
+        position: relative;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .about-us div.content h2,
+    .about-us.vis div.content h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .about-us div.content p,
+    .about-us.vis div.content p{
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+@media screen and (max-width:480px){
+    .about-us img{
+        position: relative;
+        width: 60%;
+    }
+    .about-us div.content,
+    .about-us.vis div.content{
+        width: 95%;
+        margin-bottom: 0;
+    }
 }
 
-.activity .content .box:nth-child(4n+1) h1{
-    background: #ff0068;
-}
-.activity .content .box:nth-child(4n+1):hover h1{
-    background: white;
-    color: black;
-    -webkit-box-shadow: 0 0 0 400px #ff0068;
-            box-shadow: 0 0 0 400px #ff0068;
-}
-.activity .content .box:nth-child(4n+2) h1{
-    background: #b300b3;
-}
-.activity .content .box:nth-child(4n+2):hover h1{
-    background: white;
-    color: black;
-    -webkit-box-shadow: 0 0 0 400px #b300b3;
-            box-shadow: 0 0 0 400px #b300b3;
-}
-.activity .content .box:nth-child(4n+3) h1{
-    background: #00e600;
-}
-.activity .content .box:nth-child(4n+3):hover h1{
-    background: white;
-    color: black;
-    -webkit-box-shadow: 0 0 0 400px #00e600;
-            box-shadow: 0 0 0 400px #00e600;
-}
-.activity .content .box:nth-child(4n+4) h1{
-    background: #3333ff;
-}
-.activity .content .box:nth-child(4n+4):hover h1{
-    background: white;
-    color: black;
-    -webkit-box-shadow: 0 0 0 400px #3333ff;
-            box-shadow: 0 0 0 400px #3333ff;
-}
 
-/*Style For footer for Transition*/
-.footerIcon:hover{
-    cursor: pointer;
-    -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-            transform: scale(1.3);
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*======================= Particle Setup========================*/
 
 canvas {
@@ -278,44 +549,16 @@ canvas {
   left: 0;
   height: auto;
   opacity: 0.6;
-  z-index: -99999;
+  z-index: 0;
+  pointer-events: none;
 }
-/*Loader Animation*/
-.load{
-    z-index: 999999999;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #231f20;
-}
-/*Internship btn*/
-#know-more{
-    position: relative;
-    display: block;
-    width : 100px;
-    text-align: center;
-    padding: 10px 0;
-    margin: 20px auto 0;
-    -webkit-box-shadow: 0px 2px  5px rgba(0,0,0,0.3);
-            box-shadow: 0px 2px  5px rgba(0,0,0,0.3);
-    text-decoration: none;
-    background: #fff;
-    color: black;
-}
-
-@media screen and (max-width:340px){
-    .activity .content .box{
-        width: 280px;
-    }
+/*Style For footer for Transition*/
+.footerIcon:hover{
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }

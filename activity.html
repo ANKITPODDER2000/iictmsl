@@ -9,238 +9,424 @@
     <link rel="stylesheet" href="./animate.css">
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/nav.css">
 </head>
 <body id="particles-js">
     <!-- Loader -->
     <div class="load">
         <a><img src="https://i.imgur.com/hQZ4cyx.gif"><a>
     </div>
-    <div class="responsive-bar">
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
-        </div>
-        <div class="menu">
-            <h4>MENU</h4>
-        </div>
-    </div>
-    <!--============================Navbar SetUp Html==========================-->
+    
+    <!--NavbarSetUp-->
     <nav>
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
+                <li class="active"><a href="activity.html">ACTIVITY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <div class="marker"></div>
+            </ul>
         </div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
-            <li><a href="#" class="active">ACTIVITY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
     </nav>
-    <!--============================End of Navbar SetUp Html==========================-->
-    <!--=============================Header For Top Portion===========================-->
-    <!--<header id="particles-js">
+    <!--FixedBar For Top of the Page-->
+    <div class="fixedbar">
         <div>
-            <p class=""><span class="conetnt"></span></p>
+            <a href="#">
+                <img src="./image/IIC.png">
+            </a>
         </div>
-    </header>-->
-    <!--=======================End of Header For Top Portion===========================-->
-    <!--=======================Start Of IIC Activity===========================-->
-    <h1 style="text-align: center;margin: 110px 0 0 0;">Our Activity</h1>
-    <div class="activity">
-        <div class="content">
-            <div class="box" data-aos="fade-right">
-                <h1>1</h1>
-                <h3>Inauguration</h3>
-                <p>In the month of October 2019 the Inauguration Ceremony of IIC TMSL  took place in Techno Main Campus.</p>
-            </div>
-            <div class="box" data-aos="fade-right">
-                <h1>2</h1>
-                <h3>Innovation Day</h3>
-                <p> IIC TMSL celebrated Innovation Day 2019 for encouraging students to grow an innovative mind-set. </p>
-            </div>
-            <div class="box" data-aos="fade-right">
-                <h1>3</h1>
-                <h3>EAD</h3>
-                <p>IIT KGP in association with IIC TMSL organized Entrepreneurship Awareness Drive on 19th October 2019 in Techno Main
-                Saltlake campus.</p>
-            </div>
-            <div class="box" data-aos="fade-right">
-                <h1>4</h1>
-                <h3>E-Start</h3>
-                <p>IIT KGP in association with IIC TMSL organized E-Start which is a platform to validate ideas and build business models with an exclusive mentorship offered by experienced entrepreneurs on 19th October 2019 in Techno Main Saltlake campus.</p>
-            </div>
-            <div class="box" data-aos="fade-right">
-                <h1>5</h1>
-                <h3>Poster Making Competition</h3>
-                <ul>
-                    <p> IIC TMSL organized a poster designing competition on the theme <q>INNOVATION</q> in October 2019 to encourage the creativity of graphic designers.</p>
-                </ul>
-            </div>
-            <div class="box" data-aos="fade-right">
-                <h1>6</h1>
-                <h3>Internship Portal</h3>
-                <p> IIC TMSL launched an internship portal in the month of October to help students for getting internships according to their skillset.</p>
-                <a target = "_blank" href="http://internship.iictmsl.in" id="know-more">VISIT</a>
-            </div>
-            <div class="box" data-aos="fade-right">
-                <h1>7</h1>
-                <h3>Innovation Award</h3>
-               <p>IIC TMSL organized <q>Innovation Award 2019</q> ceremony to felicitate innovative minds and encourage innovative activities around the campus.</p>
+        <div>
+            <i class="far fa-moon" id="day-night"></i>
+            <a class="btn">Contact Us</a>
+            <div class="handburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </div>
-    <!--Footer is Same For Every File,And It has *****Inline-CSS****-->
-    <footer
-        style="width: 100%;height: 50px;background: black;color: white;line-height: 50px;text-align: center;margin-top: 0px">
-        <p style="margin: 0">Contact Us - 
-          <a target = "_blank" href="https://www.facebook.com/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-facebook-square"></i></a>
-          <a target = "_blank" href="https://twitter.com/iictmsl"><i style="margin: 0 5px;color: white  " class="footerIcon fab fa-twitter"></i></a>
-          <a target = "_blank" href="https://www.instagram.com/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-instagram"></i></a>
-          <a target = "_blank" href="https://www.linkedin.com/company/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-linkedin-in"></i></a>
+    <!--Scroll Top Option-->
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div id="main">
+      <!--EVENTS & ACTIVITIES-->
+      <section class="container">
+        <h1 class="heading"><span>E</span>VENTS & <span>A</span>CTIVITIES</h1>
+        <div class="textBox" onmouseover="hover(this)" onmouseleave="hoveroff()">
+          <h3>Poster Making Competition</h3>
+          <h4>(12-15th October, 2019):</h4>
+          <p>
+            IIC TMSL organized a poster designing competition
+            on the theme INNOVATION in October 2019 to
+            encourage the creativity of graphic designers.
+
+          </p>
+        </div>
+        <div class="textBox" onmouseover="hover(this)" onmouseleave="hoveroff()">
+          <h3>Innovation Day</h3>
+          <h4>(15th October, 2019):</h4>
+          <p>
+            IIC TMSL celebrated Innovation Day 2019 on 15th
+            October for encouraging students to grow an
+            innovative mind-set.
+
+          </p>
+        </div>
+        <div class="textBox" onmouseover="hover(this)" onmouseleave="hoveroff()">
+          <h3>Inauguration</h3>
+          <h4>(19th October, 2019):</h4>
+          <p>
+            In the month of October 2019 the Inauguration
+            Ceremony of IIC TMSL took place in Techno Main
+            Campus.
+          </p>
+        </div>
+        <div class="textBox" onmouseover="hover(this)" onmouseleave="hoveroff()">
+          <h3>Logo Lunch & Website Launch</h3>
+          <h4>(19th October, 2019):</h4>
+          <p>
+            IIC-TMSL Launched its logo & website during inauguration on 19th October
+          </p>
+        </div>
+        <div class="textBox" onmouseover="hover(this)" onmouseleave="hoveroff()">
+          <h3>Innovation Award</h3>
+          <h4>(19th October, 2019):</h4>
+          <p>
+            IIC TMSL organized Innovation Award
+            2019 ceremony to felicitate innovative
+            minds and encourage innovative activities
+            around the campus. Innovation award was
+            presented to nominated participants on
+            the esteemed stage of EAD.
+          </p>
+        </div>
+        <div class="screen"></div>
+      </section>
+
+      <section class="ead">
+        <div class="image">
+          <img src="./imagegallery/ead21.jpg">
+        </div>
+        <div class="content">
+          <div class="box">
+            <h1>EAD</h1>
+            <p>IIT KGP in association with IIC TMSL organized
+                Entrepreneurship Awareness Drive on 19th
+                October 2019 in Techno Main Saltlake campus.
+                More than 1000 participants had registered &
+                350 participants were shortlisted to attend this.
+            </p>
+          </div>
+          <div class="box">
+            <h1>E-Start</h1>
+            <p>IIT KGP in association with IIC TMSL organized
+              E-Start which is a platform to validate ideas
+              and build business models with an exclusive
+              mentorship offered by experienced
+              entrepreneurs on 19th October 2019 in Techno
+              Main Saltlake campus. 20 teams got selected to
+              pitch their idea.</p>
+          </div>
+        </div>
+      </section>
+      <section class="iicsmp">
+        <h1>IIC-SMP</h1>
+        <p class="subdetails">IICSMP is the start-up mentor-ship
+            program of IIC-TMSL. We are currently
+            working with 15+ start-ups. It is an
+            initiative to support start-ups from
+            Ideation Stage to Company Registration
+            Stage.
         </p>
-    </footer>
+        <h1>IIC-SMP START-UPS & BRIEF DESCRIPTION</h1>
+        <div class="content">
+          <div class="box">
+            <h2>Majdoor Mera Naam</h2>
+            <h3>Nandan Kumar (ME, 2nd yr)</h3>
+            <p>Majdoor Mera Naam Pvt. Ltd. is
+                linking the internet and social media
+                in order to create a better platform
+                in which labour can be provided with
+                a better environment to work on.
+            </p>
+          </div>
+          <div class="box">
+            <h2>DOSEAB 1</h2>
+            <h3>Musharib Subhani (IT, 2nd yr)</h3>
+            <p>With this project my aim is to predict
+                the upcoming medical emergency by
+                comparing the real time data's of
+                heart rate, oxygen saturation, Blood
+                pressure, body temperature with
+                database so as to save previous lives.
+            </p>
+          </div>
+          <div class="box">
+            <h2>E-Box</h2>
+            <h3>Sanket Sharan (CSE, 1st yr)</h3>
+            <p>You don't have to pay electricity bills
+                anymore you can generate your own
+                energy and use it by your need.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Online stationary and robotics item shop</h2>
+            <h3>Priyanka Kumari (EIE, 1st yr)</h3>
+            <p>An online platform where all the
+                necessary things of students will be
+                available like stationary items ,
+                robotics items , online notes for Sems
+                etc
+            </p>
+          </div>
+          <div class="box">
+            <h2>Green Spectrum</h2>
+            <h3>Pratim Sarkar(ECE, 1st yr</h3>
+            <p>The idea is to use biodegradable
+materials to create small bags and
+pen-holders, that are otherwise made
+using non-decomposable plastic.
+            </p>
+          </div>
+          <div class="box">
+            <h2>VEN-NEER</h2>
+            <h3>Prithul Mukherjee (ME, 2nd yr)</h3>
+            <p>Manufacturing dental veneers and
+dental screws which are basically not
+manufactured in India and required
+engineers for manufacturing it
+            </p>
+          </div>
+          <div class="box">
+            <h2>Trendflip</h2>
+            <h3>Prattay Chakaraborty
+(IT, 3rd yr)
+</h3>
+            <p>It is a platform for content creators
+where they can submit their blogs and
+make money from it.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Shoes for blind</h2>
+            <h3>Soumalya Bhattacharya(EE, 1st yr)</h3>
+            <p>Using electronics to help blind people
+have a better experience while
+walking.
+            </p>
+          </div>
+          <div class="box">
+            <h2>Bio-luminescence</h2>
+            <h3>Abhiroop Basak(IT, 1st yr)</h3>
+            <p>It is an idea to use plants as source of
+light. Based on MIT research papers
+we have developed this idea where
+we can permanently replace
+household as well as street lights by
+injecting some hormones to a
+particular plant by converting them
+into a bio-luminescence object. It is a
+eco-friendly, affordable solution
+which can save energy.
+            </p>
+          </div>
+          <div class="box">
+            <h2>All in one place</h2>
+            <h3> Gaurav Kumar Mishra(EE, 2nd Yr)</h3>
+            <p>An app that will provide all public
+service to the door step. Using this
+app you can avail multiple type of
+services sitting from home.
+
+            </p>
+          </div>
+
+          <div class="box">
+            <h2>Madbuddy</h2>
+            <h3>Poulami Chakrabarty(ME, 4th yr)</h3>
+            <p>AA platform which provides several
+services related to digital marketing.
+Like: Graphic Designing, Social
+Listening, SEO etc.
+</p>
+          </div>
+          <div class="box">
+            <h2>Tourcera</h2>
+            <h3>Kaushik Ghosh(CSE, 4th yr)</h3>
+            <p>A tourism agency which will give a
+premium travel experience. It will
+help you to find your perfect travel
+companion.</p>
+          </div>
+          <div class="box">
+            <h2>Shutter X</h2>
+            <h3>Dipanjan Guchait & Koustav Banerjee(IT, 2nd yr)</h3>
+            <p>Shutter X is a platform where
+photographers, graphic designers,
+and models can showcase their
+digital artistic talent and get paid. It
+basically works as a freelancing
+platform & online shop for
+photography, digital artwork and
+modelling.</p>
+          </div>
+          <div class="box">
+            <h2>Yoursdoc</h2>
+            <h3>Ankush Kumar Lohani (CSE,1st Yr)</h3>
+            <p>Healthcare relevant and an unique
+idea.</p>
+          </div>
+        </div>
+      </section>
+      <h1 id="INITIATIVES">INITIATIVES</h1>
+      <div class="about-us">
+        <img src="./image/iicintern.png" >
+          <div class="content">
+            <h2>Internship Portal</h2>
+            <p>
+                IIC TMSL launched an internship
+                portal in the month of October to
+                help students for getting internships
+                according to their skillset.
+            </p>
+          </div>
+      </div>
+      <div class="about-us">
+        <img src="./svg/idea.svg" >
+          <div class="content">
+            <h2>RISE</h2>
+            <p>
+                (Launched on: 30th October, 2019)
+                RISE is another initiative of IIC TMSL
+                where we provide free courses to
+                enhance the skill-set on latest
+                technology trends like AI/ML, Data
+                Sc, Robotics etc. We are also
+                planning to do short length Webinars
+                with Entrepreneurs and Industry
+                Experts to upgrade the knowledge of
+                TMSL students.
+            </p>
+          </div>
+      </div>
+
+      <div class="about-us">
+        <img src="./svg/idea.svg" >
+          <div class="content">
+            <h2>Blog</h2>
+            <p>
+                (January 2020 Onwards)
+                IIC TMSL has launched IIC blog to
+                update the knowledge of the
+                students of TMSL regarding business,
+                startup and technology. It is a great
+                opportunity for content creators to
+                showcase their talent by writing
+                blogs on above mentioned topics.
+            </p>
+          </div>
+      </div>
+
+      <div class="about-us">
+        <img src="./svg/idea.svg" >
+          <div class="content">
+            <h2>Innopedia</h2>
+            <p>(Launched on 13th March, 2020)
+Innopedia, an initiative by IIC TMSL, aims at
+making you aware of the latest advancements
+in terms of innovations around you. The
+innovaters themselves would explain the
+attributes of their products or concepts through
+our YouTube channel related to innovation.
+            </p>
+          </div>
+      </div>
+
+      <div class="about-us">
+        <img src="./svg/idea.svg" >
+          <div class="content">
+            <h2>ENVISAGE</h2>
+            <p>
+                (24th-26th April, 2020)
+                ENVISAGE is born out of the dreams and
+                aspirations of the youth who have the zest and
+                the zeal to take their future in their own hands.
+                Supporting the growing startup culture in the
+                country, we are promised to inculcate and
+                identify the best ideas and b-plans. Envisage,
+                the official E-Summit of TMSL, is the platform
+                for budding entrepreneurs to showcase the
+                power of their ideas and to be appreciated and
+                mentored by the best in the fields.
+            </p>
+          </div>
+      </div>
+
+      <div class="about-us">
+        <img src="./image/bondhu.png" >
+          <div class="content">
+            <h2>BONDHU</h2>
+            <p>
+                (Launched on: 22nd April, 2020)
+                BONDHU is an online platform ideated and
+                developed by the team of innovators at
+                Institution’s Innovation Council, Techno Main
+                Salt Lake(Official Entrepreneurship and
+                Innovation Cell recognised by MHRD, GOI),
+                which aims to connect the volunteers with the
+                elders with the help of technology that they
+                can visit from anywhere. In the hard times,
+                example being the current lockdown due to the
+                COVID-19 pandemic - young people come
+                forward to help the elders by delivering the
+                essentials to them.
+            </p>
+          </div>
+      </div>
+
+      <div class="about-us">
+        <img src="./svg/idea.svg" >
+          <div class="content">
+            <h2>Start-up Services</h2>
+            <p>
+                (Launched on: 25th April, 2020)
+                IIC TMSL launched its new initiative where
+                students and people from outside the college
+                can get their idea mentored under the club.
+                They get technical, marketing or any other
+                assistance by the club for converting their idea
+                into a viable product or service. A ‘ Mitra ‘ is
+                appointed to the start-ups selected after
+                several rounds of meetings. The ‘ Mitra ‘ looks
+                after the needs of the start-up and also act as a
+                mentor to them.
+            </p>
+          </div>
+      </div>
+
+      <!--Footer is Same For Every File,And It has *****Inline-CSS****-->
+      <footer
+          style="width: 100%;height: 50px;background: black;color: white;line-height: 50px;text-align: center;margin-top: 0px">
+          <p style="margin: 0">Contact Us - 
+            <a target = "_blank" href="https://www.facebook.com/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-facebook-square"></i></a>
+            <a target = "_blank" href="https://twitter.com/iictmsl"><i style="margin: 0 5px;color: white  " class="footerIcon fab fa-twitter"></i></a>
+            <a target = "_blank" href="https://www.instagram.com/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-instagram"></i></a>
+            <a target = "_blank" href="https://www.linkedin.com/company/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-linkedin-in"></i></a>
+          </p>
+      </footer>
+    </div>
     <!--***********************************Add Js**************************************-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./fontawesome-free-5.11.2-web/js/fontawesome.min.js"></script>
     <script src="./jquery.js"></script>
-    <script type="text/javascript">
-  /*particlesJS('particles-js', {
-  "particles": {
-    "number": {
-      "value": 50,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#000"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.3,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 10,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 80,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 300,
-      "color": "#000",
-      "opacity": 0.2,
-      "width": 2
-    },
-    "move": {
-      "enable": true,
-      "speed": 12,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 800,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 800,
-        "size": 80,
-        "duration": 2,
-        "opacity": 0.8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
-
-);*/
-        window.addEventListener('load', function () {
-            $('.load').fadeOut(1500);
-        });
-
-
-        AOS.init({
-            duration: 2000,
-        });
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() && window.innerWidth >= 760) {
-                $('nav').addClass('a animated slideInDown');
-                //console.log("COme");
-            }
-            else {
-                $('nav').removeClass('a animated slideInDown');
-            }
-        });
-        $(document).ready(() => {
-            $('.menu h4').click(() => {
-                $("nav ul").toggleClass('active');
-            })
-        })
-        console.clear();
-    </script>
+    <script src="./particles.js"></script>
+    <script src="./js/activity.js"></script>
+    <script src="./js/nav.js"></script>
 </body>
 </html>
