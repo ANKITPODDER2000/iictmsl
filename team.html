@@ -6,222 +6,68 @@
     <link rel="stylesheet" type="text/css" href="./stylesheets/team.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./animate.css">
     <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" />
 </head>
 
 <body id="particles-js">
-    <!-- Loader -->
-    <div class="load">
-        <img id="loading" src="http://www.vitorazevedo.net/external_files/loading_small.png">
-    </div>
-    <div class="responsive-bar">
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
-        </div>
-        <div class="menu">
-            <h4>MENU</h4>
-        </div>
-    </div>
-    <!--============================Navbar SetUp Html==========================-->
+	<!--NavbarSetUp-->
     <nav>
-        <div class="icon">
-            <a href="index.html"><img src="./image/IIC.png"></a>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
+                <li><a href="activity.html">ACTIVITY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li class="active"><a href="team.html">TEAM</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <div class="marker"></div>
+            </ul>
         </div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="http://iictmsl.in/envisage/">ENVISAGE</a></li>
-            <li><a href="activity.html">ACTIVITY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="" class="active">TEAM</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
     </nav>
+    <!--FixedBar For Top of the Page-->
+    <div class="fixedbar">
+        <div>
+            <a href="#">
+                <img src="./image/IIC.png">
+            </a>
+        </div>
+        <div>
+            <i class="far fa-moon" id="day-night"></i>
+            <a class="btn">Contact Us</a>
+            <div class="handburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--Scroll Top Option-->
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+
     <!--Members Details h2->Name p->About the person -->
-    <h1>Our Members</h1>
+    <div id="main">
+	<div class="header">
+		<h1>Core Member</h1>
+    </div>
     <div class="mainBx">
         <div class="contain">
-            <!--====================31th member =====================-->
+            <!--====================1st member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
-                        <img src="./image/img31c.jpeg" style="">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Kaushik Ghosh</h2>
-                            <p>Start-up Head</p>
-                            <p>kgkaushik2507@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/kaushikthinks"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Kaushik Ghosh</b></h3>
-                    <p>Start-up Head</p>
-                </div>
-            </div>
-            <!--====================2nd member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img2.jpeg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Ritwik Gupta</h2>
-                            <p>Innovation Head</p>
-                            <p>ritwik94348gupta@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/ritwik-gupta-178867130/"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Ritwik Gupta</b></h3>
-                    <p>Innovation Head</p>
-                </div>
-            </div>
-            <!--====================3rd member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img3.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Sukarna Sil</h2>
-                            <p>Patent Head</p>
-                            <p>silsukarna@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/sukarna-sil-b38001137"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Sukarna Sil</b></h3>
-                    <p>Patent Head</p>
-                </div>
-            </div>
-             <!--====================1st member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img1.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>poulami chakrabarty</h2>
-                            <p>Internship Head</p>
-                            <p>chakrabartypoulami98@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/poulami-chakrabarty-b93a7316a/"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>poulami chakrabarty</b></h3>
-                    <p>Internship Head</p>
-                </div>
-            </div>
-            <!--====================4th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img4.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Sumit Kumar Mahto</h2>
-                            <p>Social Media Head</p>
-                            <p>sumitkrmahto24@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/sumit-kumar-mahto-973a7615a"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Sumit Kumar Mahto</b></h3>
-                    <p>Social Media Head</p>
-                </div>
-            </div>
-            <!--====================38th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img38.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Harsh Raman</h2>
-                            <p>General Management Head</p>
-                            <p>harshramandas@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/harshramandas"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Harsh Raman</b></h3>
-                    <p>General Management Head</p>
-                </div>
-            </div>
-            <!--====================34th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img34.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Somesh Garodia</h2>
-                            <p>Finance Head</p>
-                            <p>steynous@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/somesh-garodia-074090141"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Somesh Garodia</b></h3>
-                    <p>Finance Head</p>
-                </div>
-            </div>
-            <!--====================5th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img5.jpg">
+                        <img src="./image/img_1.jpg">
                     </div>
                     <div class="layer layer1"></div>
                     <div class="layer layer2"></div>
                     <div class="contentBx">
                         <div id="content">
                             <h2>Prattay Chakrabarty</h2>
-                            <p>Technical Head</p>
+                            <p>Convenor</p>
                             <p>prattay2015@gmail.com</p>
                             <div class="icon">
                                 <a target = "_blank" href="https://www.linkedin.com/in/prattay-chakrabarty/"><i class="fab fa-linkedin-in"></i></a>
@@ -231,45 +77,72 @@
                 </div>
                 <div id="desig">
                     <h3><b>Prattay Chakrabarty</b></h3>
-                    <p>Technical Head</p>
+                    <p>Convenor</p>
                 </div>
             </div>
-            <!--====================7th member =====================-->
+
+            <!--====================2th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
-                        <img src="./image/img7.jpg">
+                        <img src="./image/img_2.jpg">
                     </div>
                     <div class="layer layer1"></div>
                     <div class="layer layer2"></div>
                     <div class="contentBx">
                         <div id="content">
-                            <h2>Amlan Mukherjee</h2>
-                            <p>Graphics Head</p>
-                            <p>amlanph.05@gmail.com</p>
+                            <h2>RAJ CHHETRI</h2>
+                            <p>Co-Convenor & Co-Sponsorship Head</p>
+                            <p>rajchhetriedu@gmail.com</p>
                             <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/amlan-mukherjee"><i class="fab fa-linkedin-in"></i></a>
+                                <a target = "_blank" href="https://www.linkedin.com/in/raj-chhetri-74880b148"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="desig">
-                    <h3><b>Amlan Mukherjee</b></h3>
-                    <p>Graphics Head</p>
+                    <h3><b>RAJ CHHETRI</b></h3>
+                    <p>Co-Convenor & Co-Sponsorship Head</p>
                 </div>
             </div>
-            <!--====================6th member =====================-->
+
+            <!--====================3th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
-                        <img src="./image/img6.png">
+                        <img src="./image/img_3.jpg">
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div id="content">
+                            <h2>Sougata konar</h2>
+                            <p>Sponsorship Head & Signing Authority</p>
+                            <p>sougatakonar96@gmail.com</p>
+                            <div class="icon">
+                                <a target = "_blank" href="https://www.linkedin.com/in/sougata-konar-025620154"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desig">
+                    <h3><b>Sougata konar</b></h3>
+                    <p>Sponsorship Head & Signing Authority</p>
+                </div>
+            </div>
+
+            <!--====================4th member =====================-->
+            <div class="box">
+                <div id="mainBx">
+                    <div class="imgBx">
+                        <img src="./image/img_4.png">
                     </div>
                     <div class="layer layer1"></div>
                     <div class="layer layer2"></div>
                     <div class="contentBx">
                         <div id="content">
                             <h2>Rounak Chourasia</h2>
-                            <p>Content Head</p>
+                            <p>Co-Convenor</p>
                             <p>rounak122@gmail.com</p>
                             <div class="icon">
                                 <a target = "_blank" href="https://www.linkedin.com/in/rounak-chourasia/"><i class="fab fa-linkedin-in"></i></a>
@@ -279,11 +152,143 @@
                 </div>
                 <div id="desig">
                     <h3><b>Rounak Chourasia</b></h3>
-                    <p>Content Head</p>
+                    <p>Co-Convenor</p>
                 </div>
             </div>
+
+            <!--====================5th member =====================-->
+            <div class="box">
+                <div id="mainBx">
+                    <div class="imgBx">
+                        <img src="./image/img_5.jpg">
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div id="content">
+                            <h2>Amlan Mukherjee</h2>
+                            <p>Resource Head</p>
+                            <p>amlanph.05@gmail.com</p>
+                            <div class="icon">
+                                <a target = "_blank" href="https://www.linkedin.com/in/amlan-mukherjee"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desig">
+                    <h3><b>Amlan Mukherjee</b></h3>
+                    <p>Resource Head</p>
+                </div>
+            </div>
+
+            <!--====================6th member =====================-->
+            <div class="box">
+                <div id="mainBx">
+                    <div class="imgBx">
+                        <img src="./image/img_6.jpg">
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div id="content">
+                            <h2>Tanushree Nayak</h2>
+                            <p>PR Head</p>
+                            <p>tanusnyk@gmail.com</p>
+                            <div class="icon">
+                                <a target = "_blank" href="https://www.linkedin.com/in/sarnav-dutta-786729b5/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desig">
+                    <h3><b>Tanushree Nayak</b></h3>
+                    <p>PR Head</p>
+                </div>
+            </div>
+
+            <!--====================7th member =====================-->
+            <div class="box">
+                <div id="mainBx">
+                    <div class="imgBx">
+                        <img src="./image/img_6.jpg">
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div id="content">
+                            <h2>Rajdeep Pal</h2>
+                            <p>Tech Head</p>
+                            <p>rajdeep108pal@gmail.com</p>
+                            <div class="icon">
+                                <a target = "_blank" href="https://www.linkedin.com/in/sarnav-dutta-786729b5/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desig">
+                    <h3><b>Rajdeep Pal</b></h3>
+                    <p>Tech Head</p>
+                </div>
+            </div>
+
             <!--====================8th member =====================-->
             <div class="box">
+                <div id="mainBx">
+                    <div class="imgBx">
+                        <img src="./image/img_8.jpg">
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div id="content">
+                            <h2>SOWVIK MISRA</h2>
+                            <p>Admin Head</p>
+                            <p>sowvikmisra2016@gmail.com</p>
+                            <div class="icon">
+                                <a target = "_blank" href="https://www.linkedin.com/in/sowvik-misra-870877148"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desig">
+                    <h3><b>SOWVIK MISRA</b></h3>
+                    <p>Admin Head</p>
+                </div>
+            </div>
+
+            <!--====================9th member =====================-->
+            <div class="box">
+                <div id="mainBx">
+                    <div class="imgBx">
+                        <img src="./image/img_9.jpg">
+                    </div>
+                    <div class="layer layer1"></div>
+                    <div class="layer layer2"></div>
+                    <div class="contentBx">
+                        <div id="content">
+                            <h2>Arnab Acharjee</h2>
+                            <p>Management Head</p>
+                            <p>arnabacharjee.aa@gmail.com</p>
+                            <div class="icon">
+                                <a target = "_blank" href="https://www.linkedin.com/in/arnab-acharjee-b9a3a3147"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desig">
+                    <h3><b>Arnab Acharjee</b></h3>
+                    <p>Management Head</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            
+            <!--<div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
                         <img src="./image/img8.jpg">
@@ -306,7 +311,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================36th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -330,7 +334,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================17th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -354,7 +357,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================32th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -378,104 +380,11 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================13th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img13.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Sougata konar</h2>
-                            <p>Member</p>
-                            <p>sougatakonar96@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/sougata-konar-025620154"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Sougata konar</b></h3>
-                    <p>Member</p>
-                </div>
-            </div>
-            <!--====================37th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img37.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>Tanushree Nayak</h2>
-                            <p>Member</p>
-                            <p>tanusnyk@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/sarnav-dutta-786729b5/"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>Tanushree Nayak</b></h3>
-                    <p>Member</p>
-                </div>
-            </div>
             
-            <!--====================11th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img11.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>RAJ CHHETRI</h2>
-                            <p>Member</p>
-                            <p>rajchhetriedu@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/raj-chhetri-74880b148"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>RAJ CHHETRI</b></h3>
-                    <p>Member</p>
-                </div>
-            </div>
-            <!--====================9th member =====================-->
-            <div class="box">
-                <div id="mainBx">
-                    <div class="imgBx">
-                        <img src="./image/img9.jpg">
-                    </div>
-                    <div class="layer layer1"></div>
-                    <div class="layer layer2"></div>
-                    <div class="contentBx">
-                        <div id="content">
-                            <h2>SOWVIK MISRA</h2>
-                            <p>Member</p>
-                            <p>sowvikmisra2016@gmail.com</p>
-                            <div class="icon">
-                                <a target = "_blank" href="https://www.linkedin.com/in/sowvik-misra-870877148"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desig">
-                    <h3><b>SOWVIK MISRA</b></h3>
-                    <p>Member</p>
-                </div>
-            </div>
-            <!--====================10th member =====================-->
+            
+            
+            
+            
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -500,7 +409,6 @@
                 </div>
             </div>
             
-            <!--===================16th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -524,7 +432,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================14th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -548,7 +455,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================23th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -572,7 +478,6 @@
                     <p>Member and Web Developer</p>
                 </div>
             </div>
-            <!--====================21th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -596,7 +501,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================22th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -620,7 +524,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================25th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -644,7 +547,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================19th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -668,7 +570,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================18th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -692,7 +593,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================26th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -716,7 +616,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================20th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -740,7 +639,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================33th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -765,7 +663,6 @@
                 </div>
             </div>
             
-            <!--====================24th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -790,7 +687,6 @@
                 </div>
             </div>
             
-            <!--====================30th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -814,7 +710,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================40th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -838,7 +733,6 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--====================41th member =====================-->
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -862,7 +756,7 @@
                     <p>Member</p>
                 </div>
             </div>
-            <!--Ritam-->
+
             <div class="box">
                 <div id="mainBx">
                     <div class="imgBx">
@@ -887,7 +781,7 @@
                     <p>Member</p>
                 </div>
             </div>
-
+        -->
         </div>
     </div>
     <footer
@@ -899,149 +793,12 @@
             <a target = "_blank" href="https://www.linkedin.com/company/iictmsl/"><i style="margin: 0 5px;color: white" class="footerIcon fab fa-linkedin-in"></i></a>
         </p>
     </footer>
+    </div>
     <!--***********************************Add Js**************************************-->
     <script src="./jquery.js"></script>
-    <script type="text/javascript">
-/*
-particlesJS('particles-js',{
-  "particles": {
-    "number": {
-      "value":100,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#000"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.4,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 10,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 80,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 300,
-      "color": "#000",
-      "opacity": 0.4,
-      "width": 2
-    },
-    "move": {
-      "enable": true,
-      "speed": 12,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 800,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 800,
-        "size": 80,
-        "duration": 2,
-        "opacity": 0.8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 400,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-}
-j
-);
-*/
-
-
-
-
-        //AOS.init({
-        //  duration:2000,
-        //});
-        window.addEventListener('load', function () {
-            $('.load').fadeOut(1500);
-        });
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() && window.innerWidth >= 760) {
-                $('nav').addClass('a animated slideInDown');
-                //console.log("COme");
-            }
-            else {
-                $('nav').removeClass('a animated slideInDown');
-            }
-        });
-        $(document).ready(() => {
-            $('.menu h4').click(() => {
-                $("nav ul").toggleClass('active');
-            })
-        })
-        console.clear();
-    </script>
+    <script src="./particles.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/team.js"></script>
 </body>
 
 </html>
