@@ -274,17 +274,28 @@ $("#day-night").click(()=>{
     });
     //$(".fixedbar div a img").attr("src","")
 });
-
-function details(dict){
-    console.log(dict);
-    $("#particles-js > div.show > div > div.image > img").attr('src',dict['photo']);
-    document.querySelector("#particles-js > div.show > div > div.details > h2").innerHTML = dict['name'];
-    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(2)").innerHTML = dict['pos'];
-    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(3)").innerHTML = dict['mail'];
-    $("#particles-js > div.show > div > div.details > a").attr('src',dict['link']);
+let memno = -1;
+function details(i){
+    memno = i;
+    $("#particles-js > div.show > div > div.image > img").attr('src',dict[memno]['photo']);
+    document.querySelector("#particles-js > div.show > div > div.details > h2").innerHTML = dict[memno]['name'];
+    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(2)").innerHTML = dict[memno]['pos'];
+    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(3)").innerHTML = dict[memno]['mail'];
+    $("#particles-js > div.show > div > div.details > a").attr('src',dict[memno]['link']);
     $("#particles-js > div.show").addClass('active');
 }
 $("#particles-js > div.show > i").click(()=>{
     $("#particles-js > div.show").removeClass('active');
 })
+
+function slide(shift){
+    if((memno==0 && shift==-1) || (memno==(dict.length)-1 && shift==+1))
+        return;
+    memno += shift;
+    $("#particles-js > div.show > div > div.image > img").attr('src',dict[memno]['photo']);
+    document.querySelector("#particles-js > div.show > div > div.details > h2").innerHTML = dict[memno]['name'];
+    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(2)").innerHTML = dict[memno]['pos'];
+    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(3)").innerHTML = dict[memno]['mail'];
+    $("#particles-js > div.show > div > div.details > a").attr('src',dict[memno]['link']);
+}
 console.clear();

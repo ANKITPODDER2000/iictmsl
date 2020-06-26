@@ -60,6 +60,10 @@
     			<p>ryhyrhs</p>
     			<a target = "_blank" href=""><i class="fab fa-linkedin-in"></i></a>
     		</div>
+    		<div class="icon">
+    			<i class="fas fa-angle-double-left" onclick="slide(-1)"></i>
+    			<i class="fas fa-angle-double-right" onclick="slide(1)"></i>
+    		</div>
     	</div>
     </div>
     <!--Members Details h2->Name p->About the person -->
@@ -70,7 +74,7 @@
 	    <div class="mainBx">
 	        <!--====================1st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'Prattay Chakrabarty','pos':'Convenor','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'prattay2015@gmail.com','photo':'./image/img_1.jpg'})">
+            	<div class="img" onclick="details(0)">
 	            		<img src="./image/img_1.jpg">
 	            		<span><i class="fas fa-plus"></i></span>
         		</div>
@@ -79,7 +83,7 @@
 
 	        <!--====================2st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'RAJ CHHETRI','pos':'Co-Convenor & Co-Sponsorship Head','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'rajchhetriedu@gmail.com','photo':'./image/img_2.jpg'})">
+            	<div class="img" onclick="details(1)">
             		<span><i class="fas fa-plus"></i></span>
             		<img src="./image/img_2.jpg">
         		</div>
@@ -88,7 +92,7 @@
 
 	        <!--====================3st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'Sougata Konar','pos':'Sponsorship Head & Signing Authority','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'sougatakonar96@gmail.com','photo':'./image/img_3.jpg'})">
+            	<div class="img" onclick="details(2)">
             		<span><i class="fas fa-plus"></i></span>
             		<img src="./image/img_3.jpg">
         		</div>
@@ -97,7 +101,7 @@
 
 	        <!--====================4st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'Rounak Chourasia','pos':'Co-Convenor','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'rounak122@gmail.com','photo':'./image/img_4.png'})">
+            	<div class="img" onclick="details(3)">
             		<img src="./image/img_4.png">
             		<span><i class="fas fa-plus"></i></span>
         		</div>
@@ -106,7 +110,7 @@
 
 	        <!--====================5st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'Amlan Mukherjee','pos':'Resource Head','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'amlanph.05@gmail.com','photo':'./image/img_5.jpg'})">
+            	<div class="img" onclick="details(4)">
             		<img src="./image/img_5.jpg">
             		<span><i class="fas fa-plus"></i></span>
         		</div>
@@ -115,7 +119,7 @@
 
 	        <!--====================6st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'Tanushree Nayak','pos':'PR Head','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'tanusnyk@gmail.com','photo':'./image/img_6.jpg'})">
+            	<div class="img" onclick="details(5)">
             		<img src="./image/img_6.jpg">
             		<span><i class="fas fa-plus"></i></span>
         		</div>
@@ -124,7 +128,7 @@
 
 	        <!--====================7st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'Rajdeep Pal','pos':'Tech Head','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'rajdeep108pal@gmail.com','photo':'./image/img_7.jpg'})">
+            	<div class="img" onclick="details(6)">
             		<img src="./image/img_7.jpg">
             		<span><i class="fas fa-plus"></i></span>
         		</div>
@@ -133,7 +137,7 @@
 
 	        <!--====================8st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'SOWVIK MISRA','pos':'Admin Head','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'sowvikmisra2016@gmail.com','photo':'./image/img_8.jpg'})">
+            	<div class="img" onclick="details(7)">
             		<img src="./image/img_8.jpg">
             		<span><i class="fas fa-plus"></i></span>
         		</div>
@@ -142,7 +146,7 @@
 
 	        <!--====================9st member =====================-->
 	        <div class="box">
-            	<div class="img" onclick="details({'name':'Arnab Acharjee','pos':'Management Head','link':'https://www.linkedin.com/in/prattay-chakrabarty/','mail':'arnabacharjee.aa@gmail.com','photo':'./image/img_9.jpg'})">
+            	<div class="img" onclick="details(8)">
             		<img src="./image/img_9.jpg">
             		<span><i class="fas fa-plus"></i></span>
         		</div>
@@ -857,6 +861,7 @@
     <!--***********************************Add Js**************************************-->
     <script src="./jquery.js"></script>
     <script src="./particles.js"></script>
+    <script src="./js/member.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/team.js"></script>
 </body>
