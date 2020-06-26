@@ -274,4 +274,17 @@ $("#day-night").click(()=>{
     });
     //$(".fixedbar div a img").attr("src","")
 });
+
+function details(dict){
+    console.log(dict);
+    $("#particles-js > div.show > div > div.image > img").attr('src',dict['photo']);
+    document.querySelector("#particles-js > div.show > div > div.details > h2").innerHTML = dict['name'];
+    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(2)").innerHTML = dict['pos'];
+    document.querySelector("#particles-js > div.show > div > div.details > p:nth-child(3)").innerHTML = dict['mail'];
+    $("#particles-js > div.show > div > div.details > a").attr('src',dict['link']);
+    $("#particles-js > div.show").addClass('active');
+}
+$("#particles-js > div.show > i").click(()=>{
+    $("#particles-js > div.show").removeClass('active');
+})
 console.clear();

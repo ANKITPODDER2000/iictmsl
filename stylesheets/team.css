@@ -15,7 +15,7 @@ body,html{
     font-family: 'Montserrat', sans-serif;
     background: var(--background);
 }
-/*===================================================================*/
+/*===================================================================
 .mainBx{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -234,6 +234,227 @@ body,html{
 	background: transparent;
 	color: white;
 }
+=================================mainBx=============================*/
+.mainBx{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.mainBx .box{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: 10px 30px;
+}
+.mainBx .box .img{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	cursor: pointer;
+	overflow: hidden;
+}
+.mainBx .box .img img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transition: 0.5s;
+	z-index: 2;
+}
+.mainBx .box .img span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background: #0A1E5994;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+	color: #fff;
+}
+.mainBx .box .img span i{
+	font-size: 20px;
+	padding: 10px;
+	border: 1.75px solid #fff;
+	border-radius: 50%;
+}
+.mainBx .box .img:hover img{
+	transform: scale(1.1);
+}
+.mainBx .box .img:hover span{
+	opacity: 1;
+}
+.mainBx .box h2{
+	position: relative;
+	line-height: 40px;
+	margin-top: 30px;
+	text-align: center;
+	color: var(--color);
+}
+@media screen and (max-width: 350px){
+	.mainBx{
+		display: block;
+		padding: 0;
+	}
+	.mainBx .box{
+		position: relative;
+		width: 80%;
+		height: 320px;
+		display: block;
+		padding: 0;
+		overflow: hidden;
+		margin: 0 auto 40px;
+	}
+	.mainBx .box .img{
+		position: relative;
+		width: 250px;
+		height: 250px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+/*========================================show================================*/
+.show{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,.95);
+	z-index: 9999999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: 0.5s;
+}
+.show > i{
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #fff;
+}
+.show.active{
+	transform: translateY(0);
+	opacity: 1;
+}
+.show .content{
+	position: relative;
+	width: 800px;
+	height: 400px;
+	background: #0a1e59;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.show .content .image{
+	position: relative;
+	width: 350px;
+	height: 100%;
+}
+.show .content .image img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.show .content .details{
+	position: relative;
+	padding: 30px;
+	display: block;
+	height: 100%;
+	width: calc(100% - 350px);
+	color: #fff;
+}
+.show .content .details h2{
+	width: 100%;
+	position: relative;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	margin-bottom: 15px;
+}
+.show .content .details p{
+	width: 100%;
+	position: relative;
+	word-wrap: break-word;
+	margin-bottom: 15px;
+}
+.show .content .details a{
+	color: #fff;
+}
+
+@media screen and (max-width: 900px){
+	.show .content{
+		width: 80%;
+	}
+	.show .content .image{
+		width: 50%;
+	}
+	.show .content .details{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 645px){
+	.show .content{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 530px){
+	.show .content{
+		display: block;
+		width: 80%;
+		height: 70%;
+	}
+	.show .content .image{
+		width: 100%;
+		max-height: 60%;
+	}
+	.show .content .image{
+		position: relative;
+		width: 100%;
+		object-fit: contain;
+	}
+	.show .content .details{
+		position: relative;
+		width: 100%;
+		height: 40%;
+		padding: 10px 20px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.show .content .details h2{
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	.show .content .details p{
+		font-size: 14px;
+		margin-bottom: 6px;
+	}
+	.show > i{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+}
+
 
 
 /*==================================Style H1==================================*/
