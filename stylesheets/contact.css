@@ -125,7 +125,7 @@ h1#boh{
 .boh{
 	position: relative;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 60vh;
 	padding: 0 10%;
 	display: flex;
 	justify-content: space-around;
