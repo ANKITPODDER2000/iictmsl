@@ -340,6 +340,7 @@ body,html{
 	margin-left: 20px;
 }
 .mem > div ol li{
+	text-transform: uppercase;
 	line-height: 20px;
 }
 @media screen and (max-width: 975px){
