@@ -140,6 +140,8 @@ $("#day-night").click(()=>{
     if(!day){
         document.documentElement.style.setProperty('--color', '#fff');
         document.documentElement.style.setProperty('--background', '#000');
+        document.documentElement.style.setProperty('--col1', '#fff5');
+        document.documentElement.style.setProperty('--col2', '#fff3');
         color = "#fff";
 
         $('#day-night').removeClass("fa-moon");
@@ -152,6 +154,8 @@ $("#day-night").click(()=>{
     }else{
         document.documentElement.style.setProperty('--color', '#000');
         document.documentElement.style.setProperty('--background', '#fff');
+        document.documentElement.style.setProperty('--col1', '#0007');
+        document.documentElement.style.setProperty('--col2', '#0005');
         color = "#000";
 
         $('#day-night').addClass("fa-moon");
