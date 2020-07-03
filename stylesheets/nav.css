@@ -130,6 +130,7 @@ nav{
     display: flex;
     align-items: center;
     transition: 0.75s;
+    overflow: hidden;
 }
 nav.togglebar{
     transform: translateX(0);
