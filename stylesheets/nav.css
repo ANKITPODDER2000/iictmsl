@@ -1,4 +1,3 @@
-  
 *{
     padding: 0;
     margin: 0;
@@ -131,7 +130,6 @@ nav{
     display: flex;
     align-items: center;
     transition: 0.75s;
-    overflow: scroll;
 }
 nav.togglebar{
     transform: translateX(0);
