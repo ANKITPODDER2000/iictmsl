@@ -89,9 +89,10 @@ body,html{
 	color: var(--color);
 }
 .mainBx .box p{
-	font-size: 15px;
+	font-size: 18px;
 	text-align: center;
 	margin-top: 10px;
+	color: var(--color);
 }
 @media screen and (max-width: 350px){
 	.mainBx{
@@ -101,7 +102,7 @@ body,html{
 	.mainBx .box{
 		position: relative;
 		width: 80%;
-		height: 320px;
+		height: 350px;
 		display: block;
 		padding: 0;
 		overflow: hidden;
