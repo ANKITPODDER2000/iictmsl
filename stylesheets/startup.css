@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,500;1,600&family=Poppins&family=Russo+One&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--background : #fff;
+	--color: #000;
+}
+body,html{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background);
+}
+/*=======================-===============Header==============================================*/
+/*==========================IIC-SMP=====================================*/
+.iicsmp {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.iicsmp h1,
+h1#INITIATIVES{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    background: -o-linear-gradient(45deg ,red,purple);
+    background: linear-gradient(45deg ,red,purple);
+    -webkit-background-clip : text;
+    margin-bottom: 25px;
+    -webkit-text-fill-color : transparent;
+    margin-bottom: 30px;
+}
+.iicsmp p.subdetails{
+    width: 600px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    color: var(--color);
+}
+@media screen and (max-width: 650px){
+    .iicsmp h1{
+        position: relative;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto 15px;
+    }
+    .iicsmp p.subdetails{
+        width: 80%;
+    }
+}
+
+.iicsmp .content{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.iicsmp .content div.box{
+    width: 350px;
+    min-height: 350px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    color: var(--color);
+    transition: 0.5s;
+}
+.iicsmp .content div.box:hover{
+    color: var(--background);
+    background:  var(--color);
+}
+.iicsmp .content div.box h2{
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.iicsmp .content div.box h3{
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.iicsmp .content div.box p{
+    position: relative;
+    font-size: 16px;
+}
+.initiative{
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+@media screen and (max-width: 400px){
+    .iicsmp .content div.box{
+        min-height: 170px;
+        box-sizing: border-box;
+    }
+    .iicsmp .content div.box h2{
+        font-size: 20px;
+    }
+    .iicsmp .content div.box h3{
+        font-size: 16px;
+    }
+    .iicsmp .content div.box p{
+        font-size: 14px;
+    }
+}
+/*======================= Particle Setup========================*/
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}
+/*Style For footer for Transition*/
+.footerIcon:hover{
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}

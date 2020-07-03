@@ -355,14 +355,6 @@ body,html{
         font-size: 15px;
     }
 }
-/*==========================IIC-SMP=====================================*/
-.iicsmp {
-    position: relative;
-    margin-top: 50px;
-    width: 100%;
-    min-height: 100vh;
-}
-.iicsmp h1,
 h1#INITIATIVES{
     text-align: center;
     font-size: 30px;
@@ -375,79 +367,10 @@ h1#INITIATIVES{
     -webkit-background-clip : text;
     margin-bottom: 25px;
     -webkit-text-fill-color : transparent;
-}
-.iicsmp p.subdetails{
-    width: 600px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 45px;
-    color: var(--color);
-}
-@media screen and (max-width: 650px){
-    .iicsmp h1{
-        position: relative;
-        font-size: 20px;
-        display: block;
-        margin: 0 auto;
-    }
-    .iicsmp p.subdetails{
-        width: 80%;
-    }
-}
-
-.iicsmp .content{
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.iicsmp .content div.box{
-    width: 350px;
-    height: 350px;
-    margin: 15px 0;
-    box-sizing: border-box;
-    padding: 30px 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 10;
-    color: var(--color);
-    transition: 0.5s;
-}
-.iicsmp .content div.box:hover{
-    color: var(--background);
-    background:  var(--color);
-}
-.iicsmp .content div.box h2{
-    position: relative;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-.iicsmp .content div.box h3{
-    position: relative;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.iicsmp .content div.box p{
-    position: relative;
-    font-size: 16px;
-}
-.initiative{
-    position: relative;
-    margin-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    position: relative;
-    min-height: 100vh;
+    margin-bottom: 30px;
 }
 /*=======================INITIATIVE===============================*/
+
 .about-us{
     width: 100%;
     min-height: 30vh;
