@@ -293,7 +293,7 @@ body,html{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#092d33,transparent);
+    background: linear-gradient(transparent,#092d33);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -451,17 +451,14 @@ h1#INITIATIVES{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+svg{
+    fill: var(--color);
+    position: relative;
+    left: 50%;
+    display: block;
+    transform: translate(-50%,0);
+    margin-top: -10px;
+}
 
 
 /*======================= Particle Setup========================*/

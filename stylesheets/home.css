@@ -388,7 +388,7 @@ a#knowmore2:hover:before{
 		font-weight: bold;
 	}
 }
-/*==========================counter=============================*/
+/*==========================counter=============================
 .counter{
 	position: relative;
 	width: 100%;
@@ -434,7 +434,7 @@ a#knowmore2:hover:before{
 	font-size: 28px;
 	margin-bottom: 20px;
 }
-/*Responsive*/
+
 @media screen and (max-width: 1050px){
 	.counter{
 		flex-wrap: wrap;
@@ -454,6 +454,32 @@ a#knowmore2:hover:before{
 	}
 	.counter .count h3{
 		font-size: 23px;
+	}
+}
+*/
+
+.counterImg{
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	box-sizing: border-box;
+	padding: 0 50px;
+	margin-bottom: 30px;
+}
+.counterImg img{
+	position: relative;
+	width: 90%;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
+}
+@media screen and (max-width: 700px){
+	.counterImg{
+		padding: 0;
+		margin-top: -50px;
+	}
+	.counterImg img{
+		width: 95%;
 	}
 }
 /*==========================Faculty Details ======================*/

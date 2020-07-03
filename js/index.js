@@ -175,6 +175,7 @@ $("#day-night").click(()=>{
         $(".fixedbar").addClass('night');
         $("#main > div.logo > div > img").attr("src","./image/IIC2_night.png");
         $("#particles-js > div.fixedbar > div:nth-child(1) > a > img").attr("src","./image/IIC_night.png");
+        $("#main > section > img").attr('src','./image/iiccounternight.png')
     }else{
         document.documentElement.style.setProperty('--color', '#000');
         document.documentElement.style.setProperty('--background', '#fff');
@@ -187,6 +188,7 @@ $("#day-night").click(()=>{
         $(".fixedbar").removeClass('night');
         $("#main > div.logo > div > img").attr("src","./image/IIC2.png");
         $("#particles-js > div.fixedbar > div:nth-child(1) > a > img").attr("src","./image/IIC.png");
+        $("#main > section > img").attr('src','./image/iiccounterday.png')
     }
     particlesJS('particles-js', {
         "particles": {

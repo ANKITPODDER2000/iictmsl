@@ -32,6 +32,7 @@ header{
 header img{
 	width: 450px;
 	margin: 20px 0;
+	/*-webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0001);*/
 }
 header div{
 	position: relative;
@@ -125,6 +126,7 @@ header div span:nth-child(2){
 .about-us img{
 	position: relative;
 	width: 450px;
+	/*-webkit-box-reflect: below 1px linear-gradient(transparent,transparent,rgba(0,0,0,0.4));*/
 }
 .about-us div.content{
 	overflow: hidden;
