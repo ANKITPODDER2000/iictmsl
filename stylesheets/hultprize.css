@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300;1,500;1,600&family=Poppins&family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background : #fff;
+    --color: #000;
+}
+body,html{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background);
+    color: var(--color);
+}
+
+/*=======================-===============Header==============================================*/
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    color: var(--color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header img.svg{
+    width: 450px;
+    margin: 20px 0;
+    /*-webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0001);*/
+}
+header div.heading{
+    position: relative;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+header div.heading img{
+    position: relative;
+    width: 100%;
+    transition: .5s;
+}
+
+@media screen and (max-width: 995px){
+    header{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 995px){
+    header{
+        min-height: 70vh;
+        justify-content: center;
+    }
+    header img.svg{
+        position: relative;
+        width: 300px;
+        margin-bottom: 100px;
+    }
+    header div.heading{
+        position: relative;
+        width: 300px;
+    }
+    header div.heading img{
+        margin-bottom: 70px;
+    }
+}
+@media screen and (max-width: 350px){
+    header img.svg{
+        width: 270px;
+        margin-bottom: 100px;
+    }
+    header div.heading{
+        width: 250px;
+    }
+}
+/*=======================================introduction==================================*/
+section.introduction{
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    margin-bottom: 50px;
+}
+section.introduction ul{
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 30px auto 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+section.introduction ul li ol{
+    display: block;
+    margin-left: 30px;
+}
+section.introduction h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 740px){
+    section.introduction h1{
+        font-size: 24px;
+        width: 95%;
+        line-height: 32px;
+        display: block;
+        margin: 0 auto;
+        letter-spacing: 1px;
+    }
+    section.introduction ul{
+        width: 85%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*======================= Particle Setup========================*/
+svg{
+    fill: var(--color);
+    position: relative;
+    left: 50%;
+    display: block;
+    transform: translate(-50%,0);
+    margin-top: 10px;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}
