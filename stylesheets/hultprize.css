@@ -157,7 +157,7 @@ div.foot img{
     position: relative;
     width: 450px;
     object-fit: contain;
-    margin: 20px 0 30px;
+    margin: 20px 0px 30px;
 }
 @media screen and (max-width: 612px){
     div.foot section ul{
