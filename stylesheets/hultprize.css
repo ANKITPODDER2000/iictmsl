@@ -124,11 +124,49 @@ section.introduction h1{
     }
 }
 
-
-
-
-
-
+/*=================================Foot==================*/
+div.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+div.foot section{
+    width: 450px;
+    position: relative;
+    height: 100%;
+}
+div.foot section h1{
+    text-align: center;
+    font-size: 34px;
+}
+div.foot section ul{
+    position: relative;
+    width: 90%;
+    display: block;
+    margin: 20px auto 30px;
+    font-size: 18px;
+    line-height: 30px;
+}
+div.foot img{
+    position: relative;
+    width: 450px;
+    object-fit: contain;
+    margin: 20px auto 30px;
+}
+@media screen and (max-width: 612px){
+    div.foot section ul{
+        width: 85%;
+    }
+    div.foot img{
+        width: 280px;
+    }
+}
 
 
 
