@@ -167,7 +167,11 @@ div.foot img{
         width: 280px;
     }
 }
-
+@media screen and (max-width: 740px){
+    div.foot section h1{
+        font-size: 24px;
+    }
+}
 
 
 /*======================= Particle Setup========================*/
